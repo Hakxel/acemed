@@ -1,17 +1,1 @@
-.navigation {
-  height: 10vh;
-  width: 100vw;
-  background-color: rgba(0, 225, 255, 0.479)
-}
 
-.footer {
-  height: 10vh;
-  width: 100vw;
-  background-color: black;
-  color: whitesmoke;
-}
-
-.home, .about, .contact {
-  height: 90vh;
-  width: 100vw;
-}

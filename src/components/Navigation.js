@@ -1,9 +1,12 @@
 import React from 'react'
 
-const Navigation = () => {
-  return(
-    <header className="navigation">The header</header>
+function Navigation() {
+  return (
+    <div>
+      Navigation
+    </div>
   )
 }
 
 export default Navigation
+
