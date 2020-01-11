@@ -3,7 +3,6 @@ import {LanguageContext} from '../contexts/LanguageContext'
 import ToggleLanguage from './ToggleLanguage'
 import {Menubar} from 'primereact/menubar'
 import {Button} from 'primereact/button'
-import {sNavigation} from '../helpers/Styles'
 
 function Navigation() {
 
@@ -26,16 +25,16 @@ function Navigation() {
     },
     {
       label: t('Contact')
-    }
+    },
   ]
 
   return (
-    <Menubar model={menubarItems} style={sNavigation.menubar}>
-      <Button label={t("Login")} className="p-button-rounded p-button-warning" style={sNavigation.button}/>
-      <Button label={t("Logout")} className="p-button-info" style={sNavigation.button} onClick={handleClick}/>
-
+    <Menubar model={menubarItems}>
+      <Button label={t("Login")} className="p-button-rounded p-button-warning"/>
+      <Button label={t("Logout")} className="p-button-info" onClick={handleClick}/>
       <ToggleLanguage />
-    </Menubar>
+    </Menubar>      
+  
   )
 }
 
