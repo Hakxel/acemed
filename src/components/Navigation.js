@@ -1,8 +1,8 @@
 import React, {useContext} from 'react'
 import {LanguageContext} from '../contexts/LanguageContext'
-import ToggleLanguage from './ToggleLanguage'
 import {Menubar} from 'primereact/menubar'
-import {Button} from 'primereact/button'
+import ToggleLanguage from './ToggleLanguage'
+import Logo from './Logo'
 
 function Navigation() {
 
@@ -16,7 +16,7 @@ function Navigation() {
     {
       label: t('Home'),
       icon: 'pi pi-fw pi-home',
-      url: 'http://www.example.com',
+      url: '#hero',
       target: '_blank',
     },
     {
@@ -28,12 +28,30 @@ function Navigation() {
     },
   ]
 
+  // <Button label={t("Login")} className="p-button-rounded p-button-warning"/>
+  // <Button label={t("Logout")} className="p-button-info" onClick={handleClick}/>
+
+
   return (
-    <Menubar model={menubarItems}>
-      <Button label={t("Login")} className="p-button-rounded p-button-warning"/>
-      <Button label={t("Logout")} className="p-button-info" onClick={handleClick}/>
-      <ToggleLanguage />
-    </Menubar>      
+    <div className="navig-menu">
+      <div className="p-grid p-align-center">
+        <div className="p-col-12 p-md-2">
+          <Logo />
+        </div>
+        <div className="p-col-12 p-lg-8 p-offset-2">
+          <div className="p-grid p-justify-center">
+            <div className="p-col-12 p-md-6">
+              <Menubar model={menubarItems} />
+            </div>  
+          </div>  
+        </div>
+        <div className="p-col-2 p-md-2 p-offset-9">
+          <ToggleLanguage />
+        </div>
+
+      </div>
+
+    </div>
   
   )
 }

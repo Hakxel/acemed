@@ -1,11 +1,11 @@
 import React from 'react'
 
-function Contact() {
+function Schedule() {
   return (
     <div className="home-component">
-      Contact page
+      The Schedule Component
     </div>
   )
 }
 
-export default Contact
+export default Schedule

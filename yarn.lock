@@ -7882,6 +7882,11 @@ pretty-format@^24.7.0:
     ansi-styles "^3.2.0"
     react-is "^16.8.4"
 
+primeflex@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/primeflex/-/primeflex-1.0.0.tgz#ab8eaac11f1459b7615d1c4584da401beb0dedc5"
+  integrity sha512-/K9iHXm5wu6gZycQDP/gsfX7BpJKSNVhxTOZAJBLH88idPtC2lMgUXm28qfXFqsbxaTI49oBuMYBFlg/DBmUMg==
+
 primeicons@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/primeicons/-/primeicons-2.0.0.tgz#ec3e5a8d4d04a09309225a5a57deb911e08dc0d3"
@@ -8158,6 +8163,11 @@ react-is@^16.6.0, react-is@^16.7.0, react-is@^16.8.4:
   version "16.8.6"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.8.6.tgz#5bbc1e2d29141c9fbdfed456343fe2bc430a6a16"
   integrity sha512-aUk3bHfZ2bRSVFFbbeVS4i+lNPZr3/WM5jT2J5omUVV1zzcs1nAaf3l51ctA5FFvCRbhrH0bdAsRRQddFJZPtA==
+
+react-parallax@^3.0.3:
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/react-parallax/-/react-parallax-3.0.3.tgz#5550f1e81bf040b240045348cb3b039b73a735ef"
+  integrity sha512-kdoMjg5B9nQFh3mTFrnzkr7AoG89L/tq1c98ho3g+11UwfeYePji9D3oeqN/oDtJemWKypnB8OYrzQ/BTazrNA==
 
 react-router-dom@^5.0.0:
   version "5.0.0"

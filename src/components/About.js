@@ -2,8 +2,9 @@ import React from 'react'
 
 function About() {
   return (
-    <div>
-      About page
+    <div className="home-component">
+      <p>About page</p>
+      
     </div>
   )
 }
