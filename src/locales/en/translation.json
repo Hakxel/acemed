@@ -5,5 +5,30 @@
   "About": "About",
   "Contact": "Contact",
   "Welcome": "Welcome to Ace Medical & Rehab Center",
-  "Appointment": "Book Appointment"
+  "Appointment": "Book Appointment",
+  "Services": "Our Services",
+  "ServiceName": {
+    "1": "Service title translated 1",
+    "2": "Service title translated 2",
+    "3": "Service title 3",
+    "4": "Service title 4",
+    "5": "Service title 5",
+    "6": "Service title 6"
+  },
+  "ServiceDescrip": {
+    "1": "Service description 1", 
+    "2": "Service description 2", 
+    "3": "Service description 3", 
+    "4": "Service description 4", 
+    "5": "Service description 5", 
+    "6": "Service description 6"
+  },
+  "ServiceAlt": {
+    "1": "Service alt translated 1",
+    "2": "Service alt translated 2",
+    "3": "Service alt translated 3",
+    "4": "Service alt translated 4",
+    "5": "Service alt translated 5",
+    "6": "Service alt translated 6"
+  }
 }

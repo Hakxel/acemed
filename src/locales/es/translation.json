@@ -5,5 +5,30 @@
   "About": "Acerca de",
   "Contact": "Contacto",
   "Welcome": "Bienvenido a Ace Medical & Rehab Center",
-  "Appointment": "Reservar Cita"
+  "Appointment": "Reservar Cita",
+  "Services": "Nuestros Servicios",
+  "ServiceName": {
+    "1": "Servicio traducido 1",
+    "2": "Servicio traducido 2",
+    "3": "Servicio traducido 3",
+    "4": "Servicio traducido 4",
+    "5": "Servicio traducido 5",
+    "6": "Servicio traducido 6"
+  },
+  "ServiceDescrip": {
+    "1": "Servicio descripcion 1", 
+    "2": "Servicio descripcion 2", 
+    "3": "Servicio descripcion 3", 
+    "4": "Servicio descripcion 4", 
+    "5": "Servicio descripcion 5", 
+    "6": "Servicio descripcion 6"
+  },
+  "ServiceAlt": {
+    "1": "Servicio alt 1",
+    "2": "Servicio alt 2",
+    "3": "Servicio alt 3",
+    "4": "Servicio alt 4",
+    "5": "Servicio alt 5",
+    "6": "Servicio alt 6"
+  }
 }

@@ -18,17 +18,30 @@ class LanguageProvider extends Component {
     })
   }
 
-  translate = (txtKey) => {
-    switch (this.state.language) {
-      case 'EN':
-        return translationEN[txtKey]
+  translate = (txtKey, nestKey) => {
+    if (nestKey) {
+      switch (this.state.language) {
+          case 'EN':
+            return translationEN[txtKey][nestKey]
         
-      case 'ES':
-        return translationES[txtKey]
-      
-      default:
-        return translationEN[txtKey]
-    }  
+          case 'ES':
+            return translationES[txtKey][nestKey]
+        
+          default:
+            return translationEN[txtKey][nestKey]
+        }  
+    } else {      
+      switch (this.state.language) {
+        case 'EN':
+          return translationEN[txtKey]
+          
+        case 'ES':
+          return translationES[txtKey]
+        
+        default:
+          return translationEN[txtKey]
+      }  
+    }
   }
 
   render() {

@@ -1,17 +1,16 @@
 import React, {useContext, useState} from 'react'
 import {LanguageContext} from '../contexts/LanguageContext'
 import {ToggleButton} from 'primereact/togglebutton'
-import {Button} from 'primereact/button'
 
 function ToggleLanguage() {
 
   const {t, changeLanguage} = useContext(LanguageContext)
-  const [usingDefault, setUsingDefault] = useState(true)
+  const [usingDefaultLang, setUsingDefaultLang] = useState(true)
 
   const switchLang = (e) => {
     e.preventDefault()
-    setUsingDefault(!usingDefault)
-    if (usingDefault) {
+    setUsingDefaultLang(!usingDefaultLang)
+    if (usingDefaultLang) {
       changeLanguage('ES')
     } else {
       changeLanguage('EN')
@@ -29,7 +28,7 @@ function ToggleLanguage() {
         onIcon="es-icon"
         offLabel={t('EN')}
         offIcon="en-icon"
-        checked={usingDefault}
+        checked={usingDefaultLang}
         onChange={(e) => switchLang(e)}
         />
     </div>
