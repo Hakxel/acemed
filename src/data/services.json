@@ -1,0 +1,34 @@
+{
+  "allServices": [
+    { 
+      "key": "1",
+      "class": "service",
+      "url": "https://picsum.photos/200"
+    },
+    { 
+      "key": "2",
+      "class": "service",
+      "url": "https://picsum.photos/200"
+    },
+    { 
+      "key": "3",
+      "class": "service",
+      "url": "https://picsum.photos/200"
+    },
+    { 
+      "key": "4",
+      "class": "service",
+      "url": "https://picsum.photos/200"
+    },
+    { 
+      "key": "5",
+      "class": "service",
+      "url": "https://picsum.photos/200"
+    },
+    { 
+      "key": "6",
+      "class": "service",
+      "url": "https://picsum.photos/200"
+    }
+  ]
+}
