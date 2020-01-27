@@ -5,7 +5,7 @@ import Navigation from '../components/Navigation'
 
 function Hero({t}) {
  const handleAppointment= () => {
-    alert("Make appointment clicked")
+    alert("Book appointment clicked")
   }
   return (
     <div id="hero">

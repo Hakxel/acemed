@@ -30,5 +30,11 @@
     "4": "Service alt translated 4",
     "5": "Service alt translated 5",
     "6": "Service alt translated 6"
-  }
+  },
+  "ContactHeader": "Contact Us",
+  "ContactName": "Your Name",
+  "ContactEmail": "Contact email",
+  "ContactMessage": "Message",
+  "ContactSubmit": "Send"
+
 }
