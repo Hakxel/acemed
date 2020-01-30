@@ -5,6 +5,8 @@ import Services from './Services'
 import Schedule from './Schedule'
 import About from './About'
 import Contact from './Contact'
+import Location from  './Location'
+
 
 function Home() {
   const {t} = useContext(LanguageContext)
@@ -15,6 +17,7 @@ function Home() {
       <Schedule t={t} />
       <About t={t} />
       <Contact t={t} />
+      <Location t={t} />
     </Fragment>
   )
 }

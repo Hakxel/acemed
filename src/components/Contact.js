@@ -13,15 +13,15 @@ function Contact({t}) {
 
   return (
     <div className="home-component contact">
-      <div className="p-grid">
-        <div className="p-col-10 p-col-md-6 p-offset-1">
+      <div className="p-grid p-justify-center">
+        <div className="p-col-10 p-col-md-6">
           <div className="contact-header p-grid p-justify-center p-align-center p-nogutter">
             <h2 className="p-col-8">{t('ContactHeader')}</h2>
           </div>
         </div>
-        <div className="p-col-10 p-col-md-6 p-offset-1 contact-form">
+        <div className="p-col-10 p-col-md-6 contact-form">
           <form onSubmit={(e) => handleContactSubmit(e)}>
-            <div className="p-grid p-fluid">
+            <div className="p-grid p-justify-center p-fluid p-nogutter">
               <div className="p-col-12 form-field">
                 <span className="p-float-label">
                   <InputText id="userName" />
