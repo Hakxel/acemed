@@ -11,13 +11,13 @@ h1, h2 {
 
 /* HERO STYLES */
 #hero {
-  height: 80vh;
+  width: 100vw;
+  overflow-x: hidden;
 }
 
 .hero-content {
   height: 80vh;
 }
-
 
 .navig-menu {
   padding: 10px;

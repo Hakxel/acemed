@@ -9,11 +9,11 @@ function Hero({t}) {
   }
   return (
     <div id="hero">
-      <Parallax blur={0} bgImage={require('../resources/nurse-with-senior-client_small.jpg')} bgImageAlt="Physiotherapist massaging leg of patient" strength={200}>
+      <Parallax blur={0} bgImage={require('../resources/nurse-stretch_large.jpg')} bgImageAlt="Physiotherapist massaging leg of patient" strength={200} bgImageStyle={{width: 'auto', height: 'auto'}}>
+      <div>
+        <Navigation />
+      </div>
         <div className="hero-content">
-          <div>
-            <Navigation />
-          </div>
           <div className="p-grid p-dir-col p-align-center p-justify-center">
             <h1 className="p-col-6 hero-text">{t('Welcome')}</h1>
             <Button label={t('Appointment')} className="p-col-6 hero-appointment p-button-secondary p-button-raised" onClick={handleAppointment}/>
