@@ -14,8 +14,8 @@ function Home() {
     <Fragment>
       <Hero t={t} />
       <Services t={t} />
-      <Schedule t={t} />
       <About t={t} />
+      <Schedule t={t} />
       <Contact t={t} />
       <Location t={t} />
     </Fragment>

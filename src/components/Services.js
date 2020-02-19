@@ -9,8 +9,10 @@ function Services({t}) {
         <div className="p-col-6">
           <h2>{t('Services')}</h2>
         </div>
-        <div className="p-col-10">
-          <ServiceCarousel />
+        <div className="p-row">
+          <div className="p-col-12">
+            <ServiceCarousel />
+          </div>
         </div>
       </div> 
     </div>

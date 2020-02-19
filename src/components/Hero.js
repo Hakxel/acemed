@@ -7,9 +7,12 @@ function Hero({t}) {
  const handleAppointment= () => {
     alert("Book appointment clicked")
   }
+
+  const introImg = require('../resources/intro-nurse.jpg')
+  
   return (
     <div id="hero">
-      <Parallax blur={0} bgImage={require('../resources/nurse-stretch_large.jpg')} bgImageAlt="Physiotherapist massaging leg of patient" strength={200} bgImageStyle={{width: 'auto', height: 'auto'}}>
+      <Parallax blur={0} bgImage={introImg} bgImageAlt="Physiotherapist stretching leg of patient" strength={300} >
       <div>
         <Navigation />
       </div>

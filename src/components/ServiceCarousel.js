@@ -29,13 +29,13 @@ function ServiceCarousel() {
 
   const responsiveOptions = [
     {
-      breakpoint: '2048px',
+      breakpoint: '2500px',
       numVisible: 3,
       numScroll: 1
     },
     {
         breakpoint: '1024px',
-        numVisible: 3,
+        numVisible: 2,
         numScroll: 1
     },
     {
@@ -53,12 +53,12 @@ function ServiceCarousel() {
 
 
   return (
-    <div>
+    <div className="carousel">
       <Carousel
         value={serviceList} 
         itemTemplate={serviceTemplate}
         responsiveOptions={responsiveOptions}
-        autoplayInterval={4000}
+        autoplayInterval={3000}
         />
     </div>
   )

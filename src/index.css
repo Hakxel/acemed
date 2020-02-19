@@ -4,7 +4,7 @@ body {
   width: 100vw;
 }
 
-h1, h2 {
+h1, h2, h3, p {
   text-align: center;
 }
 
@@ -17,6 +17,7 @@ h1, h2 {
 
 .hero-content {
   height: 80vh;
+  overflow-x: hidden;
 }
 
 .navig-menu {
@@ -70,18 +71,80 @@ div.p-menubar.p-component {
   margin: 10px;
 }
 
-/* SERVICES STYLE */
+/* SERVICES STYLES */
+#services {
+  height: 100vh;
+  padding-top: 2rem;
+  overflow-x: hidden;
+}
+
+.carousel {
+  height: 100%;
+}
+
+.p-carousel-container {
+  height: 90%;
+  width: 90vw;
+}
+
+.p-carousel-item {
+  height: 60vh;
+  padding: 10px;
+}
+
+.p-card-header {
+  height: 100%;
+}
+
+.p-card-body {
+  height: 8rem;
+}
+
+.p-carousel-item img {
+  height: auto;
+}
 
 .service-card > .p-card-body{
   text-align: center;
+  background-color: azure;
+}
+
+/* ABOUT STYLES*/
+
+.about-container {
+  height: 70vh;
+  padding-top: 2rem;
+}
+
+.about-panel {
+  height: 70% ;
+  margin: 5px;
+}
+
+.panel-left {
+  background-image: url("https://ik.imagekit.io/hakxelimgs/shutterstock_757859683_gf7eycRVI.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.panel-right {
+  background-color: navajowhite;
+}
+
+.panel-right div.p-grid {
+  height: 100%;
+}
+
+.panel-right p {
+  margin: 2rem;
 }
 
 
-/* CONTACT STYLE */
+/* CONTACT STYLES */
 .contact-header {
   width: 100%;
   height: 50vw;
-  background-image: url('../src/resources/physiotherapist-with-clipboard.jpg');
+  background-image: url('https://ik.imagekit.io/hakxelimgs/shutterstock_1060342241_f59fxlzS7.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
