@@ -12,7 +12,7 @@ function Contact({t}) {
 
 
   return (
-    <div className="home-component contact">
+    <div id="contact" className="home-component">
       <div className="p-grid p-justify-center">
         <div className="p-col-10 p-col-md-6">
           <div className="contact-header p-grid p-justify-center p-align-center p-nogutter">

@@ -4,10 +4,13 @@ body {
   width: 100vw;
 }
 
-h1, h2, h3, p {
+h1, h2, h3, h4, p {
   text-align: center;
 }
 
+.home-component {
+  height: 100vh;
+}
 
 /* HERO STYLES */
 #hero {
@@ -73,7 +76,6 @@ div.p-menubar.p-component {
 
 /* SERVICES STYLES */
 #services {
-  height: 100vh;
   padding-top: 2rem;
   overflow-x: hidden;
 }
@@ -140,13 +142,31 @@ div.p-menubar.p-component {
 }
 
 
+/* SCHEDULE STYLES */
+#schedule {
+  height: 70vh;
+  width: 100vw;
+}
+
+.schedule-info {
+  /* background-color: rgba(103, 168, 253, 0.808); */
+  width: 100vw;
+  height: auto;
+  background-image: url('https://ik.imagekit.io/hakxelimgs/intersection_medium_gtlVHF5t4M.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+
 /* CONTACT STYLES */
 .contact-header {
   width: 100%;
   height: 50vw;
   background-image: url('https://ik.imagekit.io/hakxelimgs/shutterstock_1060342241_f59fxlzS7.jpg');
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: conver;
   background-position-x: center;
 }
 
