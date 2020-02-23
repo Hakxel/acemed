@@ -9,7 +9,7 @@ export const LanguageContext = React.createContext()
 class LanguageProvider extends Component {
 
   state = {
-    language: '',
+    language: 'EN',
   }
 
   changeLanguage = (lang) => {
@@ -49,6 +49,7 @@ class LanguageProvider extends Component {
       <LanguageContext.Provider
         value={
           {
+            language: this.state.language,
             changeLanguage: this.changeLanguage,
             t: this.translate,
           }          

@@ -20,12 +20,13 @@ function Navigation() {
       target: '_blank',
     },
     {
-      label: t('About'),
+      label: t('Appointment'),
+      icon: 'pi pi-calendar',
       command: handleClick
     },
     {
-      label: t('Contact')
-    },
+      separator: true
+    }
   ]
 
   // <Button label={t("Login")} className="p-button-rounded p-button-warning"/>

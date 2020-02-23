@@ -1,36 +1,51 @@
-import React, {useContext, useState} from 'react'
+import React, {useContext, useState, useEffect} from 'react'
 import {LanguageContext} from '../contexts/LanguageContext'
-import {ToggleButton} from 'primereact/togglebutton'
+import {Button} from 'primereact/button'
 
 function ToggleLanguage() {
 
-  const {t, changeLanguage} = useContext(LanguageContext)
-  const [usingDefaultLang, setUsingDefaultLang] = useState(true)
+  const {language, t, changeLanguage} = useContext(LanguageContext)
+  const [buttonIcon, setButtonIcon] = useState('')
+  const [buttonLang, setButtonLang] = useState('')
 
-  const switchLang = (e) => {
-    e.preventDefault()
-    setUsingDefaultLang(!usingDefaultLang)
-    if (usingDefaultLang) {
-      changeLanguage('ES')
-    } else {
-      changeLanguage('EN')
-    }  
+  useEffect(() => {
+    if(!buttonIcon || !buttonLang) {
+      switchButtonIconAndLanguage(language)
+    }
+  }, [])
+  
+  const switchButtonIconAndLanguage = (lang) => {
+    let newLang = toggleLanguage(lang)
+    let icon = newLang.toLowerCase() + '-icon'
+    setButtonIcon(icon)
+    setButtonLang(newLang)
+  }
+
+
+  const toggleLanguage = (lang) => {
+    switch(lang) {
+      case 'EN':
+        return 'ES'
+      case 'ES':
+        return 'EN'
+      default:
+        return 'ES'
+    }
+  }
+
+  const switchLang = () => {
+    changeLanguage(buttonLang)
+    switchButtonIconAndLanguage(buttonLang)
   }
 
   return (
-    // <div className="p-grid lang-buttons">
-    //   <Button icon={ES} iconPos="left" onClick={() => changeLanguage('ES')} />
-    //   <Button icon={EN} iconPos="left" onClick={() => changeLanguage('EN')} />    
-    // </div>
-    <div className="p-grid">
-      <ToggleButton 
-        onLabel={t('ES')} 
-        onIcon="es-icon"
-        offLabel={t('EN')}
-        offIcon="en-icon"
-        checked={usingDefaultLang}
-        onChange={(e) => switchLang(e)}
-        />
+    <div className="p-grid p-justify-center">
+      <Button 
+        label={t(buttonLang)} 
+        className="toggleLangButton"
+        icon={`${buttonIcon}`}
+        onClick={() => switchLang()}
+      />
     </div>
   )
 }

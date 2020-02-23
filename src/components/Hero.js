@@ -19,7 +19,7 @@ function Hero({t}) {
         <div className="hero-content">
           <div className="p-grid p-dir-col p-align-center p-justify-center">
             <h1 className="p-col-6 hero-text">{t('Welcome')}</h1>
-            <Button label={t('Appointment')} className="p-col-6 hero-appointment p-button-secondary p-button-raised" onClick={handleAppointment}/>
+            <Button label={t('BookNow')} className="p-col-6 hero-appointment p-button-secondary p-button-raised" onClick={handleAppointment}/>
           </div>
         </div>
       </Parallax>

@@ -1,11 +1,12 @@
 {
-  "EN": "Eng",
-  "ES": "Esp",
+  "EN": "English",
+  "ES": "Español",
   "Home": "Inicio",
   "About": "Acerca de",
   "Contact": "Contacto",
   "Welcome": "Bienvenido a Ace Medical & Rehab Center",
-  "Appointment": "Reservar Cita",
+  "Appointment": "Citas",
+  "BookNow": "Reservar Cita",
   "Services": "Nuestros Servicios",
   "ServiceName": {
     "1": "Servicio traducido 1",
