@@ -16,42 +16,38 @@ function Navigation() {
     {
       label: t('Home'),
       icon: 'pi pi-fw pi-home',
-      url: '#hero',
-      target: '_blank',
+      url: '/',
+    },
+    {
+      label: '|'
     },
     {
       label: t('Appointment'),
       icon: 'pi pi-calendar',
-      command: handleClick
+      url: '/appointments',
     },
-    {
-      separator: true
-    }
   ]
-
-  // <Button label={t("Login")} className="p-button-rounded p-button-warning"/>
-  // <Button label={t("Logout")} className="p-button-info" onClick={handleClick}/>
 
 
   return (
-    <div className="navig-menu">
-      <div className="p-grid p-align-center">
-        <div className="p-col-12 p-md-2">
-          <Logo />
-        </div>
-        <div className="p-col-12 p-lg-8 p-offset-2">
-          <div className="p-grid p-justify-center">
-            <div className="p-col-12 p-md-6">
-              <Menubar model={menubarItems} />
+    <div className="navigation p-grid p-justify-center">
+      <div className="p-col-12 p-md-10">
+        <div className="navig-menu p-grid p-align-center">
+          <div className="p-col-12 p-md-3">
+            <Logo />
+          </div>
+          <div className="p-col-12 p-md-6">
+            <div className="p-grid p-justify-center">
+              <div className="p-col-12 p-md-6">
+                <Menubar model={menubarItems} />
+              </div>  
             </div>  
-          </div>  
+          </div>
+          <div className="p-col-12 p-md-3">
+            <ToggleLanguage />
+          </div>
         </div>
-        <div className="p-col-2 p-md-2 p-offset-9">
-          <ToggleLanguage />
-        </div>
-
       </div>
-
     </div>
   
   )

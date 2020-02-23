@@ -1,37 +1,66 @@
 /* GLOBAL STYLES */
 
-body {
+#root {
   width: 100vw;
+}
+
+body {
   overflow-x: hidden;
+  background-color: white;
 }
 
 h1, h2, h3, h4, p {
   text-align: center;
 }
 
+.p-grid {
+  margin-right: 0em !important;
+  margin-left: 0em !important;
+}
+
+/* body .p-button:active {
+  background-color: transparent !important;
+}
+
+body .p-button:hover {
+  background-color: green !important;
+} */
+
 .home-component {
   height: 100vh;
 }
 
-/* HERO STYLES */
-#hero {
-  width: 100vw;
-  overflow-x: hidden;
-}
 
-.hero-content {
-  height: 80vh;
-  overflow-x: hidden;
+/* NAVIGATON STYLES */
+.navigation > div {
+  padding-bottom: 0em;
+  padding-left: 0em;
+  padding-right: 0em;
 }
 
 .navig-menu {
-  padding: 10px;
+  background-color: wheat ;
+  padding-top: 1rem;
+  padding-bottom: 0.5em;
+}
+
+.navig-menu :nth-child(2) {
+  padding-bottom: 0em;
+}
+
+.navig-menu :nth-child(3) {
+  padding-bottom: 0em;
+}
+
+.p-menuitem-text {
+  font-size: large;
 }
 
 .logo-img {
   max-width: 150px;
   min-width: 80px;
   width: 10%;
+  padding-bottom: 0em;
 }
 
 .es-icon {
@@ -48,18 +77,55 @@ h1, h2, h3, h4, p {
   background-size: contain;
 }
 
-.lang-buttons > .p-button.p-component {
-  min-width: 50px;
-  max-width: 5em;
-  margin: 3px;
-  width: 25%
-}
-
 div.p-menubar.p-component {
   background-color: transparent;
   border: none;
   max-width: 20rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
 }
+
+
+/* TOGGLELANGUAGE STYLES */
+.toggleLangButton {
+  background-color: darkslategrey !important;
+}
+
+.toggleLangButton.p-button:hover {
+  background-color: darkslategrey !important;
+}
+
+.toggleLangButton.p-button:active {
+  background-color: transparent !important;
+}
+
+.toggleLangButton > span {
+  font-size: medium;
+}
+
+
+/* HERO STYLES */
+#hero {
+  /* width: 100vw; */
+  overflow-x: hidden;
+  /* padding-top: 1rem; */
+}
+
+#hero > div {
+  padding-left: 0em;
+  padding-right: 0em;
+}
+
+.hero-content {
+  height: 80vh;
+  overflow-x: hidden;
+}
+
+.react-parallax {
+  width: 100%;
+}
+
 
 /* .p-menubar-custom {
   width: 100%;
