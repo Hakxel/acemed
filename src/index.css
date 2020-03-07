@@ -45,10 +45,13 @@ body .p-button:hover {
   padding: 0em;
 }
 
-.navig-menu {
-  /* background-color: wheat ; */
-  /* padding-top: 1rem; */
-  padding-bottom: 1rem;
+.navig-menu div:first-child {
+  padding-left: 0em;
+}
+
+.navig-menu div:last-child {
+  padding-top: 0em;
+  padding-right: 0em;
 }
 
 /* .navig-menu :nth-child(2) {
@@ -59,21 +62,21 @@ body .p-button:hover {
   padding-bottom: 0em;
 } */
 
+.pmenubar.pcomponent {
+  width: fit-content;
+}
+
 .p-menuitem-text {
   font-size: large;
 }
 
-a.p-menuitem-link {
-  padding-right: 0.3em !important;
-}
-
-.logo-wrapper {
+/* .logo-wrapper {
   padding-left: 0em;
-}
+} */
 
 .logo-img {
-  max-width: 130px;
-  min-width: 115px;
+  max-width: 140px;
+  min-width: 120px;
   width: 10%;
   padding-bottom: 0em;
   padding-left: 0.3em;
@@ -284,4 +287,18 @@ div.p-menubar.p-component {
 
 .form-field {
   margin: 10px;
+}
+
+@media screen and (max-width: 767px) {
+  .navig-menu > div > div.p-grid {
+    justify-content: center;
+  }
+
+  .navig-menu div:first-child {
+    margin-bottom: 0.3rem;
+  }
+
+  .navig-menu div:last-child {
+    padding-bottom: 0em;
+  }
 }

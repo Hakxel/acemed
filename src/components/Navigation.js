@@ -35,19 +35,16 @@ function Navigation() {
     <div className="navigation p-grid p-justify-center">
       <div className="p-col-12 p-md-10">
         <div className="navig-menu p-grid p-align-center p-justify-between">
-          {/* <div className="p-col-12 p-md-2 logo-wrapper"> */}
-            <Logo />
-          {/* </div> */}
-          {/* <div className="p-col-12 p-md-10 menu-wrapper">
-            <div className="p-grid p-justify-end menu-outer">
-              <div className="p-col-12 p-md-4 menu-inner"> */}
-                <Menubar model={menubarItems} />
-              {/* </div>  
-            </div>  
-          </div> */}
-          {/* <div className="p-col-12 p-md-2">
-            <ToggleLanguage />
-          </div> */}
+          <div className="p-col-12 p-md-6">
+            <div className="p-grid p-justify-start">
+              <Logo />
+            </div>
+          </div>
+          <div className="p-col-12 p-md-6">
+            <div className="p-grid p-justify-end">
+              <Menubar model={menubarItems} />
+            </div>
+          </div>
         </div>
       </div>
     </div>
