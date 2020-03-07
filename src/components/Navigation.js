@@ -17,14 +17,16 @@ function Navigation() {
       label: t('Home'),
       icon: 'pi pi-fw pi-home',
       url: '/',
+      className: 'menu-link'
     },
-    {
-      label: '|'
-    },
+    // {
+    //   label: '|'
+    // },
     {
       label: t('Appointment'),
       icon: 'pi pi-calendar',
       url: '/appointments',
+      className: 'menu-link'
     },
   ]
 
@@ -32,20 +34,20 @@ function Navigation() {
   return (
     <div className="navigation p-grid p-justify-center">
       <div className="p-col-12 p-md-10">
-        <div className="navig-menu p-grid p-align-center">
-          <div className="p-col-12 p-md-3">
+        <div className="navig-menu p-grid p-align-center p-justify-between">
+          {/* <div className="p-col-12 p-md-2 logo-wrapper"> */}
             <Logo />
-          </div>
-          <div className="p-col-12 p-md-6">
-            <div className="p-grid p-justify-center">
-              <div className="p-col-12 p-md-6">
+          {/* </div> */}
+          {/* <div className="p-col-12 p-md-10 menu-wrapper">
+            <div className="p-grid p-justify-end menu-outer">
+              <div className="p-col-12 p-md-4 menu-inner"> */}
                 <Menubar model={menubarItems} />
-              </div>  
+              {/* </div>  
             </div>  
-          </div>
-          <div className="p-col-12 p-md-3">
+          </div> */}
+          {/* <div className="p-col-12 p-md-2">
             <ToggleLanguage />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

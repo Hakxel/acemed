@@ -1,11 +1,9 @@
 import React from 'react'
 
 function Logo() {
-  const logo = require('../resources/Logo.png')
+  const logo = require('../resources/Logo_green.png')
   return (
-    <div className="p-grid p-justify-center">
-      <img className="p-col logo-img" src={logo} />
-    </div>
+    <img className="logo-img" src={logo} />
   )
 }
 

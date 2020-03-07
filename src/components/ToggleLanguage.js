@@ -39,7 +39,7 @@ function ToggleLanguage() {
   }
 
   return (
-    <div className="p-grid p-justify-center">
+    <div className="p-grid p-justify-end">
       <Button 
         label={t(buttonLang)} 
         className="toggleLangButton"
