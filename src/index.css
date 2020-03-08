@@ -109,18 +109,16 @@ div.p-menubar.p-component {
 /* TOGGLELANGUAGE STYLES */
 .toggleLangButton {
   background-color: darkslategrey !important;
+  border: 2px solid lightseagreen !important;
 }
 
 .toggleLangButton.p-button:hover {
   background-color: darkslategrey !important;
+  /* border-radius: 0px; */
 }
 
-/* .toggleLangButton.p-button:active {
-  background-color: transparent !important;
-} */
-
 .toggleLangButton > span {
-  font-size: medium;
+  font-size: small;
 }
 
 
@@ -139,7 +137,7 @@ div.p-menubar.p-component {
 .hero-content {
   height: 80vh;
   overflow-x: hidden;
-  padding-top: 1rem;
+  padding-top: 0.3rem;
 }
 
 .hero-wrapper {
@@ -147,16 +145,17 @@ div.p-menubar.p-component {
 }
 
 .hero-wrapper div:nth-child(1) {
-  flex-grow: 1;
+  max-height: 10%;
 }
 
 .hero-wrapper div:nth-child(2) {
-  flex-grow: 2;
+  /* flex-grow: 2; */
+  /* height: 40%; */
   max-width: 85%;
 }
 
 .hero-wrapper div:nth-child(3) {
-  flex-grow: 1;
+  max-height: 20%;
 }
 
 .hero-text-wrapper {
