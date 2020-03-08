@@ -27,7 +27,7 @@ function Hero({t}) {
                   </div>
                   <div className="p-col-12 p-col-align-center">
                     <div className="p-grid p-justify-center">
-                      <Button label={t('BookNow')} className="hero-appointment p-button-secondary p-button-raised" onClick={handleAppointment}/>
+                      <button  className="hero-appointment">{t('BookNow')}</button>
                     </div>
                   </div>
                 
