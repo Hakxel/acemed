@@ -11,7 +11,7 @@ function Hero({t}) {
   const introImg = require('../resources/intro-nurse.jpg')
   
   return (
-    <div id="hero" className="p-grid p-justify-center">
+    <div id="hero" className="home-component p-grid p-justify-center">
       <div className="p-col-12 p-md-10">
         <Parallax blur={0} bgImage={introImg} bgImageAlt="Physiotherapist stretching leg of patient" strength={300}>
           <div className="hero-content p-grid">

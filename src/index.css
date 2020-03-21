@@ -43,6 +43,7 @@ body .p-button:hover {
 
 .home-component {
   height: 100vh;
+  /* margin-bottom: 3rem; */
 }
 
 
@@ -300,15 +301,32 @@ div.p-menubar.p-component {
   width: 100vw;
 }
 
+#schedule > div {
+  height: 100%;
+}
+
+#schedule div.p-col-12.p-md-10 {
+  height: 100%;
+}
+
 .schedule-info {
   /* background-color: rgba(103, 168, 253, 0.808); */
-  width: 100vw;
-  height: auto;
-  background-image: url('https://ik.imagekit.io/hakxelimgs/intersection_medium_gtlVHF5t4M.jpg');
+  width: auto;
+  height: 85%;
+  background-image: url('https://ik.imagekit.io/hakxelimgs/shutterstock_636154916_Xyr4Xp3Hv.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
-  background-position: center;
+  background-position: right;
+}
+
+.schedule-wrapper {
+  background-color: rgba(252, 244, 233, 0.89);
+  height: 90%;
+  width: 90%;
+  padding: 1rem;
+  border: 3px solid whitesmoke;
+  border-radius: 5px;
 }
 
 
@@ -318,7 +336,7 @@ div.p-menubar.p-component {
   height: 50vw;
   background-image: url('https://ik.imagekit.io/hakxelimgs/shutterstock_1060342241_f59fxlzS7.jpg');
   background-repeat: no-repeat;
-  background-size: conver;
+  /* background-size: cover; */
   background-position-x: center;
 }
 
@@ -344,4 +362,5 @@ div.p-menubar.p-component {
   .navig-menu div:last-child {
     padding-bottom: 0em;
   }
+
 }
