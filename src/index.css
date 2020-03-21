@@ -21,6 +21,7 @@ h1 {
   text-transform: uppercase;
   color: rgb(52, 90, 90);
   font-size: 6vh;
+  text-shadow: whitesmoke 1px 2px 1px;
 }
 
 span, p {
@@ -200,6 +201,7 @@ div.p-menubar.p-component {
   padding: 14px 20px;
   box-shadow: 0 2px 4px darkgray;
   letter-spacing: 1px;
+  text-shadow: black 1px 1px 1px;
 }
 
 .hero-appointment:hover {
