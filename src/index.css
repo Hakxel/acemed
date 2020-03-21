@@ -117,13 +117,14 @@ div.p-menubar.p-component {
 /* TOGGLELANGUAGE STYLES */
 .toggleLangButton.p-button {
   background-color: rgb(47, 47, 97) !important;
-  border: 2px solid lightskyblue !important;
+  border: 2px solid teal !important;
 }
 
-/* .toggleLangButton.p-button:hover {
-  background-color: rgb(69, 69, 155) !important;
+.toggleLangButton.p-button:hover {
+  background-color: rgb(10, 70, 150) !important;
+  border: 2px solid lightseagreen !important;
   
-} */
+}
 
 .toggleLangButton > span {
   font-size: 14px;
@@ -189,10 +190,12 @@ div.p-menubar.p-component {
 } */
 
 .hero-appointment {
-  background-color: rgb(235, 234, 231);
+  /* background-color: rgb(235, 234, 231); */
+  background: teal;
   border: 2px solid rgb(28, 49, 49);
   border-radius: 6px;
-  color: rgb(28, 49, 49);
+  /* color: rgb(28, 49, 49); */
+  color: snow;
   cursor: pointer;
   font-size: 26px;
   font-family: 'Vollkorn';
@@ -205,14 +208,20 @@ div.p-menubar.p-component {
 }
 
 .hero-appointment:hover {
-  background: teal;
+  background: snow;
+  /* background: rgb(235, 234, 231); */
+  /* background: teal; */
   border: 2px solid black;
-  color: snow; 
+  color: teal;
+  /* color: rgb(28, 49, 49); */
+  /* color: snow;  */
+  /* text-shadow: none; */
 }
 
 .hero-appointment:active {
+  background-color: rgb(235, 234, 231);
   /* background: rgb(0, 139, 139); */
-  background: rgb(0, 138, 138);
+  /* background: rgb(0, 138, 138); */
   box-shadow: 1px 1px 1px black;
 }
 
