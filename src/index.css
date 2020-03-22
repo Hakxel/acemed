@@ -279,26 +279,31 @@ div.p-menubar.p-component {
 }
 
 /* ABOUT STYLES*/
+#about {
+  height: 80vh;
+  margin: 8px;
+}
 
 .about-container {
-  height: 70vh;
+  height: 80%;
   padding-top: 2rem;
 }
 
 .about-panel {
-  height: 70% ;
+  height: 100% ;
   margin: 5px;
 }
 
 .panel-left {
-  background-image: url("https://ik.imagekit.io/hakxelimgs/shutterstock_757859683_gf7eycRVI.jpg");
+  background-image: url("https://ik.imagekit.io/hakxelimgs/shutterstock_1243541221_yx-2Lzg5qL.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
-.panel-right {
+/* .panel-right {
   background-color: navajowhite;
-}
+} */
 
 .panel-right div.p-grid {
   height: 100%;
@@ -306,13 +311,14 @@ div.p-menubar.p-component {
 
 .panel-right p {
   margin: 2rem;
+  text-align: left;
 }
 
 
 /* SCHEDULE STYLES */
 #schedule {
   height: 90vh;
-  width: 100vw;
+  /* width: 100vw; */
 }
 
 #schedule > div {
