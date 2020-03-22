@@ -55,8 +55,8 @@ body .p-button:hover {
 } */
 
 .home-component {
-  height: 100vh;
-  /* margin-bottom: 3rem; */
+  /* height: 100vh; */
+  margin-bottom: 1rem;
 }
 
 
@@ -98,7 +98,7 @@ body .p-button:hover {
 
 .logo-img {
   max-width: 140px;
-  min-width: 120px;
+  min-width: 130px;
   width: 10%;
   padding-bottom: 0em;
   padding-left: 0.3em;
@@ -152,6 +152,7 @@ div.p-menubar.p-component {
   /* width: 100vw; */
   overflow-x: hidden;
   /* padding-top: 1rem; */
+  /* margin-bottom: 1rem; */
 }
 
 #hero > div {
@@ -243,7 +244,7 @@ div.p-menubar.p-component {
 /* SERVICES STYLES */
 #services {
   padding-top: 2rem;
-  overflow-x: hidden;
+  margin-bottom: 3rem;
 }
 
 .carousel {
@@ -252,11 +253,11 @@ div.p-menubar.p-component {
 
 .p-carousel-container {
   height: 90%;
-  width: 90vw;
+  width: 95vw;
 }
 
 .p-carousel-item {
-  height: 60vh;
+  height: 60%;
   padding: 10px;
 }
 
