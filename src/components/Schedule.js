@@ -8,7 +8,7 @@ function Schedule() {
           <div className="p-grid p-align-center p-justify-center schedule-info">
             <div className="p-col-12 p-col-justify-center schedule-wrapper">
               <h2>Clinic Hours</h2>
-              <h3>We're here when you need us</h3>
+              <h3>Here when you need us</h3>
               <div className="p-grid p-justify-around p-align-center">
                 <div className="p-col-6 p-col-">
                   <h4>Mon - Wed - Fri</h4>

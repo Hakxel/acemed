@@ -20,12 +20,25 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   color: rgb(52, 90, 90);
-  font-size: 6vh;
+  font-size: 7vh;
   text-shadow: whitesmoke 1px 2px 1px;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+h4 {
+  font-size: 1.3rem;
 }
 
 span, p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
 }
 
 .p-grid {
@@ -297,7 +310,7 @@ div.p-menubar.p-component {
 
 /* SCHEDULE STYLES */
 #schedule {
-  height: 70vh;
+  height: 90vh;
   width: 100vw;
 }
 
@@ -325,7 +338,7 @@ div.p-menubar.p-component {
   height: 90%;
   width: 90%;
   padding: 1rem;
-  border: 3px solid whitesmoke;
+  border: 3px solid aliceblue;
   border-radius: 5px;
 }
 
