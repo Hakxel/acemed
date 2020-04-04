@@ -303,16 +303,17 @@ div.p-menubar.p-component {
   background-position: center;
 }
 
-/* .panel-right {
-  background-color: navajowhite;
-} */
-
 .panel-right div.p-grid {
   height: 100%;
 }
 
+.panel-right h2 {
+  margin-top: 0px;
+  margin-bottom: 1.5rem; 
+}
+
 .panel-right p {
-  margin: 2rem;
+  margin: auto;
   text-align: left;
 }
 
@@ -372,6 +373,25 @@ div.p-menubar.p-component {
   margin: 10px;
 }
 
+@media screen and (max-width: 991px) {
+  #about {
+    height: 100vh;
+  }
+
+  .about-container {
+    height: 90vh;
+  }
+
+  .panel-left {
+    height: 65vh;
+  }
+
+  .panel-right {
+    height: 65vh;
+    width: 50vw;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .navig-menu > div > div.p-grid {
     justify-content: center;
@@ -385,4 +405,32 @@ div.p-menubar.p-component {
     padding-bottom: 0em;
   }
 
+  #about {
+    height: 105vh;
+  }
+
+  .about-container {
+    height: 100vh;
+  }
+
+  .panel-left {
+    height: 40%;
+  }
+
+  .panel-right {
+    height: 50%;
+    width: 90vw;
+    margin: auto;
+  }
+
+  .panel-right > div.p-grid {
+    height: auto;
+  }
+
 }
+
+@media screen and (max-width: 575px) {
+  #about {
+    height: 115vh;
+  }
+} 
