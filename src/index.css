@@ -186,7 +186,9 @@ div.p-menubar.p-component {
 
 .hero-text-wrapper {
   height: 100%;
-  background-color: rgba(255, 200, 135, 0.70);;
+  background-color: rgba(255, 200, 135, 0.70);
+  border-radius: 10px;
+  border: 1px solid aliceblue;
 }
 
 .react-parallax {
