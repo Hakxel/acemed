@@ -14,34 +14,36 @@ function Contact({t}) {
   return (
     <div id="contact" className="home-component">
       <div className="p-grid p-justify-center">
-        <div className="p-col-10 p-col-md-6">
+        <div className="p-col-12 p-md-10">
           <div className="contact-header p-grid p-justify-center p-align-center p-nogutter">
-            <h2 className="p-col-8">{t('ContactHeader')}</h2>
+            <h2 className="p-col-6">{t('ContactHeader')}</h2>
           </div>
         </div>
-        <div className="p-col-10 p-col-md-6 contact-form">
+        <div className="p-col-12 p-col-md-10 contact-form">
           <form onSubmit={(e) => handleContactSubmit(e)}>
             <div className="p-grid p-justify-center p-fluid p-nogutter">
-              <div className="p-col-12 form-field">
+              <div className="p-col-12 p-md-8 form-field">
                 <span className="p-float-label">
                   <InputText id="userName" />
                   <label htmlFor="userName">{t('ContactName')}</label>
                 </span>
               </div>
-              <div className="p-col-12 form-field">
+              <div className="p-col-12 p-md-8 form-field">
                 <span className="p-float-label">
                   <InputText id="userEmail" />
                   <label htmlFor="userEmail">{t('ContactEmail')}</label>
                 </span>
               </div>
-              <div className="p-col-12 form-field">
+              <div className="p-col-12 p-md-8 form-field">
                 <span className="p-float-label">
                   <InputTextarea id="userMessage" />
                   <label htmlFor="userMessage">{t('ContactMessage')}</label>
                 </span>
               </div>
-              <div className="p-col-4 p-offset-8">
-                <Button label={t('ContactSubmit')} icon="fas fa-paper-plane" />
+              <div className="p-col-12 p-md-8">
+                <div className="p-col-4 p-offset-8 submit-button">
+                  <Button label={t('ContactSubmit')} icon="fas fa-paper-plane" />
+                </div>
               </div>
             </div>
           </form>

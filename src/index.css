@@ -364,18 +364,29 @@ div.p-menubar.p-component {
   height: 50vw;
   background-image: url('https://ik.imagekit.io/hakxelimgs/shutterstock_1060342241_f59fxlzS7.jpg');
   background-repeat: no-repeat;
-  /* background-size: cover; */
+  background-size: cover;
   background-position-x: center;
 }
 
-.contact-header h2 {
+.contact-header > h2 {
   background-color: rgba(240, 248, 255, 0.719);
   border: 1px solid darkblue;
   border-radius: 5px;
+  padding-top: 5px !important;
+}
+
+.contact-form {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .form-field {
   margin: 10px;
+}
+
+.submit-button {
+  padding-right: 0px;
+  padding-left: 0px;
 }
 
 @media screen and (max-width: 991px) {
