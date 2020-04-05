@@ -320,7 +320,7 @@ div.p-menubar.p-component {
 
 /* SCHEDULE STYLES */
 #schedule {
-  height: 90vh;
+  height: 100vh;
   /* width: 100vw; */
 }
 
@@ -350,6 +350,11 @@ div.p-menubar.p-component {
   padding: 1rem;
   border: 3px solid aliceblue;
   border-radius: 5px;
+}
+
+.schedule-wrapper > h2 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 
 
