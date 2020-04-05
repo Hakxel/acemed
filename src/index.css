@@ -1,5 +1,5 @@
 /* GLOBAL STYLES */
-
+/*****************************/
 #root {
   width: 100vw;
 }
@@ -7,6 +7,11 @@
 body {
   overflow-x: hidden;
   background-color: snow;
+}
+
+h2, h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 h2, h3, h4, p {
@@ -34,11 +39,13 @@ h3 {
 
 h4 {
   font-size: 1.3rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 span, p {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 20px;
+  /* font-size: 20px; */
 }
 
 .p-grid {
@@ -56,11 +63,14 @@ body .p-button:hover {
 
 .home-component {
   /* height: 100vh; */
-  margin-bottom: 1rem;
+  /* margin-bottom: 1rem; */
+  margin-bottom: 2.5rem;
 }
 
-
+/*****************************/
 /* NAVIGATON STYLES */
+/*****************************/
+
 .navigation > div {
   margin-top: 2rem;
   padding: 0em;
@@ -127,8 +137,10 @@ div.p-menubar.p-component {
   justify-content: flex-end;
 }
 
-
+/*****************************/
 /* TOGGLELANGUAGE STYLES */
+/*****************************/
+
 .toggleLangButton.p-button {
   background-color: rgb(47, 47, 97) !important;
   border: 2px solid teal !important;
@@ -146,8 +158,10 @@ div.p-menubar.p-component {
   letter-spacing: 1px;
 }
 
-
+/*****************************/
 /* HERO STYLES */
+/*****************************/
+
 #hero {
   /* width: 100vw; */
   overflow-x: hidden;
@@ -242,11 +256,13 @@ div.p-menubar.p-component {
   box-shadow: 1px 1px 1px black;
 }
 
-
+/*****************************/
 /* SERVICES STYLES */
+/*****************************/
+
 #services {
   padding-top: 2rem;
-  margin-bottom: 3rem;
+  /* margin-bottom: 2.5rem; */
 }
 
 .carousel {
@@ -280,7 +296,10 @@ div.p-menubar.p-component {
   background-color: azure;
 }
 
+/*****************************/
 /* ABOUT STYLES*/
+/*****************************/
+
 #about {
   height: 80vh;
   margin: 8px;
@@ -303,6 +322,12 @@ div.p-menubar.p-component {
   background-position: center;
 }
 
+.panel-right {
+  border-style: outset;
+  /* border-right-color: teal;
+  border-bottom-color: teal; */
+}
+
 .panel-right div.p-grid {
   height: 100%;
 }
@@ -317,25 +342,31 @@ div.p-menubar.p-component {
   text-align: left;
 }
 
-
+/*****************************/
 /* SCHEDULE STYLES */
+/*****************************/
+
 #schedule {
-  height: 100vh;
-  /* width: 100vw; */
+  height: 75vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-#schedule > div {
-  height: 100%;
+.schedule-wrapper {
+  height: 90%;
+  width: 100%;
 }
 
-#schedule div.p-col-12.p-md-10 {
+.schedule-wrapper > div.p-col-12.p-md-10 {
+  padding: 0px;
   height: 100%;
 }
 
 .schedule-info {
-  /* background-color: rgba(103, 168, 253, 0.808); */
   width: auto;
-  height: 85%;
+  height: 90%;
   background-image: url('https://ik.imagekit.io/hakxelimgs/shutterstock_636154916_Xyr4Xp3Hv.jpg');
   background-repeat: no-repeat;
   background-size: cover;
@@ -343,22 +374,23 @@ div.p-menubar.p-component {
   background-position: right;
 }
 
-.schedule-wrapper {
+.info-wrapper {
   background-color: rgba(252, 244, 233, 0.89);
-  height: 90%;
-  width: 90%;
+  height: auto;
+  width: 70%;
   padding: 1rem;
   border: 3px solid aliceblue;
   border-radius: 5px;
 }
 
-.schedule-wrapper > h2 {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+.hours-wrapper {
+  margin-top: 1.5rem;
 }
 
-
+/*****************************/
 /* CONTACT STYLES */
+/*****************************/
+
 .contact-header {
   width: 100%;
   height: 50vw;
@@ -389,14 +421,30 @@ div.p-menubar.p-component {
   padding-left: 0px;
 }
 
+/*****************************/
+/* MEDIA QUERIES */
+/*****************************/
+
 @media screen and (max-width: 991px) {
-  #about {
+  h2 {
+    font-size: 2.9rem;
+  }
+  
+  h3 {
+    font-size: 1.6rem;
+  }
+  
+  h4 {
+    font-size: 1.2rem;
+  }
+
+  /* #about {
     height: 100vh;
   }
 
   .about-container {
     height: 90vh;
-  }
+  } */
 
   .panel-left {
     height: 65vh;
@@ -404,11 +452,27 @@ div.p-menubar.p-component {
 
   .panel-right {
     height: 65vh;
-    width: 50vw;
+    width: 40vw;
+  }
+
+  #schedule {
+    height: 80vh;
   }
 }
 
 @media screen and (max-width: 767px) {
+  h2 {
+    font-size: 2.8rem;
+  }
+  
+  h3 {
+    font-size: 1.5rem;
+  }
+  
+  h4 {
+    font-size: 1.1rem;
+  }
+
   .navig-menu > div > div.p-grid {
     justify-content: center;
   }
@@ -421,32 +485,138 @@ div.p-menubar.p-component {
     padding-bottom: 0em;
   }
 
-  #about {
+  /* #about {
     height: 105vh;
   }
 
   .about-container {
     height: 100vh;
-  }
-
+  } */
+  
   .panel-left {
-    height: 40%;
+    height: 60%;
   }
-
+  
   .panel-right {
-    height: 50%;
+    height: 45%;
     width: 90vw;
     margin: auto;
   }
-
+  
   .panel-right > div.p-grid {
     height: auto;
   }
 
+  #schedule {
+    height: 85vh;
+  }
+
+  .info-wrapper {
+    width: 85%;
+  }
+  
+}
+
+@media screen and (max-width: 690px) {
+  .panel-right {
+    height: 60%;
+  }
 }
 
 @media screen and (max-width: 575px) {
+  /* #about {
+    height: 115vh;
+  }
+
+  /* .about-container {
+    height: 110vh;
+  } */
+
+  .panel-left {
+    height: 35%;
+  }
+  
+  .panel-right {
+    height: 85%;
+    width: 98vw;
+    margin: auto;
+  }
+
+  #schedule {
+    height: 90vh;
+  }
+
+  .schedule-info {
+    height: 95%;
+  }
+
+}
+
+@media screen and (max-width: 376px) {
+  h2 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  h4 {
+    font-size: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  p {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-content {
+    height: 100vh;
+  }
+
+  #services {
+    padding-top: 0px;
+  }
+
   #about {
     height: 115vh;
   }
-} 
+
+  /*.about-container {
+    height: 125vh;
+  } */
+
+  .panel-right {
+    height:90%;
+  }
+
+  @media screen and (max-width: 340px) {
+    #about {
+      height: 130vh;
+    }
+
+    #schedule {
+      height: 100vh;
+    }
+  
+    .schedule-info {
+      height: 95%;
+    }
+  }
+
+  @media screen and (min-height: 600px) {
+    #about {
+      height: 90vh;
+    }
+  }
+
+  @media screen and (min-height: 700px) {
+    #about {
+      height: 70vh;
+    }
+  }
+}
