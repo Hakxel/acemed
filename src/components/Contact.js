@@ -14,12 +14,12 @@ function Contact({t}) {
   return (
     <div id="contact" className="home-component">
       <div className="p-grid p-justify-center">
-        <div className="p-col-12 p-md-10">
+        <div className="p-col-12 p-md-10 p-lg-8">
           <div className="contact-header p-grid p-justify-center p-align-center p-nogutter">
             <h2 className="p-col-6">{t('ContactHeader')}</h2>
           </div>
         </div>
-        <div className="p-col-12 p-col-md-10 contact-form">
+        <div className="p-col-12 p-md-10 contact-form">
           <form onSubmit={(e) => handleContactSubmit(e)}>
             <div className="p-grid p-justify-center p-fluid p-nogutter">
               <div className="p-col-12 p-md-8 form-field">

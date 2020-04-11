@@ -394,7 +394,7 @@ div.p-menubar.p-component {
 .contact-header {
   width: 100%;
   height: 50vw;
-  background-image: url('https://ik.imagekit.io/hakxelimgs/shutterstock_1060342241_f59fxlzS7.jpg');
+  background-image: url('https://ik.imagekit.io/hakxelimgs/shutterstock_1060342241_large_1zqf-tCJS.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position-x: center;
@@ -413,7 +413,7 @@ div.p-menubar.p-component {
 }
 
 .form-field {
-  margin: 10px;
+  margin: 15px;
 }
 
 .submit-button {
