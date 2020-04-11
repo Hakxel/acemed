@@ -422,6 +422,35 @@ div.p-menubar.p-component {
 }
 
 /*****************************/
+/* LOCATION STYLES */
+/*****************************/
+#location {
+  margin-bottom: 8px;
+}
+
+.map-wrapper {
+  padding: 0px;
+}
+
+/*****************************/
+/* FOOTER STYLES */
+/*****************************/
+
+.footer-wrapper {
+  height: 4rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  /* padding: 20px; */
+}
+
+.footer-wrapper > span {
+  color: snow;
+  padding: 20px;
+}
+
+/*****************************/
 /* MEDIA QUERIES */
 /*****************************/
 

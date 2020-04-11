@@ -18,7 +18,7 @@ function Location() {
   return (
     <div id="location" className="home-component">
       <div className="p-grid p-justify-center">
-        <div className="p-col-12 p-md-10">
+        <div className="p-col-12 p-md-10 map-wrapper">
           <GMap options={mapOptions} overlays={marker} style={{width: '100%', minHeight: '450px'}}/>
         </div>
       </div>
