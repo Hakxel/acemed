@@ -3,9 +3,25 @@ import React from 'react'
 function Footer() {
   return (
     <div id="footer">
-      <div className="p-grid p-justify-center">
-        <div className="p-col-12 p-md-10 footer-wrapper ">
-          <span>&copy; Ace Medical & Rehab Center, 2020</span>
+      <div className="p-grid p-justify-center footer-wrapper">
+        <div className="p-col-12 p-md-10">
+          <div className="p-grid p-justify-even footer-content">
+            <div className="p-col-12 p-md-4">
+              <div className="p-grid p-justify-start footer-item">
+                <i className="fab fa-3x fa-facebook-square"></i>
+              </div>
+            </div>
+            <div className="p-col-12 p-md-4">
+              <div className="p-grid p-justify-center footer-item">
+                <img className="logo-footer" src={require('../resources/Logo.png')}></img>
+              </div>
+            </div>
+            <div className="p-col-12 p-md-4">
+              <div className="p-grid p-justify-end footer-item">
+                <p>&copy; Ace Medical & Rehab Center, 2020</p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

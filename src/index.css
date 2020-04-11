@@ -106,7 +106,7 @@ body .p-button:hover {
   padding-left: 0em;
 } */
 
-.logo-img {
+.logo-header {
   max-width: 140px;
   min-width: 130px;
   width: 10%;
@@ -437,17 +437,36 @@ div.p-menubar.p-component {
 /*****************************/
 
 .footer-wrapper {
-  height: 4rem;
+  height: auto;
+}
+
+.footer-wrapper > div {
+  padding: 0px;
+}
+
+.footer-content {
+  padding-top: 25px;
+  padding-bottom: 5px;
   background-color: black;
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-  /* padding: 20px; */
+  /* justify-content: space-between; */
+  /* padding: 10px; */
 }
 
-.footer-wrapper > span {
+.footer-content p, .footer-content i {
   color: snow;
-  padding: 20px;
+}
+
+.footer-content > .p-col-12 {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.logo-footer {
+  max-width: 140px;
+  min-width: 130px;
+  width: 10%;
 }
 
 /*****************************/
@@ -542,6 +561,12 @@ div.p-menubar.p-component {
 
   .info-wrapper {
     width: 85%;
+  }
+
+  .footer-item {
+    align-content: center;
+    justify-content: center;
+    padding-top: 10px;
   }
   
 }
