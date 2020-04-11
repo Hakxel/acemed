@@ -594,29 +594,65 @@ div.p-menubar.p-component {
     height:90%;
   }
 
-  @media screen and (max-width: 340px) {
-    #about {
-      height: 130vh;
-    }
+}
 
-    #schedule {
-      height: 100vh;
-    }
-  
-    .schedule-info {
-      height: 95%;
-    }
+@media screen and (max-width: 340px) {
+  #about {
+    height: 130vh;
   }
 
-  @media screen and (min-height: 600px) {
-    #about {
-      height: 90vh;
-    }
+  #schedule {
+    height: 100vh;
   }
 
-  @media screen and (min-height: 700px) {
-    #about {
-      height: 70vh;
-    }
+  .schedule-info {
+    height: 95%;
+  }
+}
+
+@media screen and (min-height: 600px) {
+  #about {
+    height: 90vh;
+  }
+}
+
+@media screen and (min-height: 700px) {
+  #about {
+    height: 75vh;
+  }
+}
+
+
+@media screen and (max-height: 500px) and (orientation: landscape) {
+  h2 {
+    font-size: 2.2rem;
+  }
+
+  .hero-appointment {
+    font-size: 1.1rem;
+  }
+
+  #about {
+    height: 150vh;
+    height: auto;
+  }
+
+  .panel-right {
+    height: auto;
+  }
+
+  .panel-left {
+    min-height: 40vh;
+    height: auto;
+  }
+
+  #schedule {
+    height: 150vh;
+    margin-top: 5rem;
+    margin-bottom: 0rem;
+  }
+
+  .info-wrapper {
+    height: auto;
   }
 }
