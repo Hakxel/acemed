@@ -22,12 +22,12 @@ function Hero({t}) {
                   </div>
                   <div className="p-col-10 p-col-align-center">
                     <div className="p-grid p-justify-center hero-text-wrapper">
-                      <h1 className="p-col">{t('Welcome')}</h1>
+                      <h1 className="p-col">{t('Hero', 'Welcome')}</h1>
                     </div>
                   </div>
                   <div className="p-col-12 p-col-align-center">
                     <div className="p-grid p-justify-center">
-                      <button  className="hero-appointment">{t('BookNow')}</button>
+                      <button  className="hero-appointment">{t('Hero', 'BookNow')}</button>
                     </div>
                   </div>
                 

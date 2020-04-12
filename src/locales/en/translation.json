@@ -1,12 +1,14 @@
 {
   "EN": "English",
   "ES": "Español",
-  "Home": "Home",
-  "About": "About",
-  "Contact": "Contact",
-  "Welcome": "Welcome to Ace Medical & Rehab Center",
-  "Appointment": "Appointments",
-  "BookNow": "Book Appointment",
+  "Navigation": {
+    "Home": "Home",
+    "Appointment": "Appointments"
+  },
+  "Hero": {
+    "Welcome": "Welcome to Ace Medical & Rehab Center",
+    "BookNow": "Book Appointment"
+  },
   "Services": "Our Services",
   "ServiceName": {
     "1": "Service title translated 1",
@@ -32,10 +34,27 @@
     "5": "Service alt translated 5",
     "6": "Service alt translated 6"
   },
-  "ContactHeader": "Contact Us",
-  "ContactName": "Your Name",
-  "ContactEmail": "Contact Email",
-  "ContactMessage": "Message",
-  "ContactSubmit": "Send"
+  "About": {
+    "Header": "About Ace Medical & Rehab",
+    "Content_1": "Nulla velit commodo ullamco elit laboris est exercitation labore do commodo in nisi ut aliqua. Ipsum dolor nostrud in et tempor dolore commodo excepteur dolore elit non eu tempor. Veniam ullamco adipisicing sunt consequat quis in incididunt consectetur laboris ad.",
+    "Content_2": "Elit cillum consequat laborum anim consectetur veniam eiusmod. Exercitation nulla adipisicing consequat adipisicing. Ut nisi nisi aute non."
+  },
+  "Schedule": {
+    "Header": "Clinic Hours",
+    "Subheader": "Here when you need us",
+    "Days_1": "Mon - Wed - Fri",
+    "Days_2": "Tue - Thu",
+    "Days_3": "Sat",
+    "Hours_1": "8:00 am - 5:00 pm",
+    "Hours_2": "9:00 am - 6:00 pm",
+    "Hours_3": "10:00 am - 4:00 pm"
+  },
+  "Contact": {
+    "Header": "Contact Us",
+    "Name": "Your Name",
+    "Email": "Contact Email",
+    "Message": "Message",
+    "Submit": "Send"
+  }
 
 }

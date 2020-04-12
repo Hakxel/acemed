@@ -14,7 +14,7 @@ function Navigation() {
 
   const menubarItems = [
     {
-      label: t('Home'),
+      label: t('Navigation', 'Home'),
       icon: 'pi pi-fw pi-home',
       url: '/',
       className: 'menu-link'
@@ -23,7 +23,7 @@ function Navigation() {
     //   label: '|'
     // },
     {
-      label: t('Appointment'),
+      label: t('Navigation', 'Appointment'),
       icon: 'pi pi-calendar',
       url: '/appointments',
       className: 'menu-link'

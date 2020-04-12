@@ -16,7 +16,7 @@ function Contact({t}) {
       <div className="p-grid p-justify-center">
         <div className="p-col-12 p-md-10 p-lg-8">
           <div className="contact-header p-grid p-justify-center p-align-center p-nogutter">
-            <h2 className="p-col-12">{t('ContactHeader')}</h2>
+            <h2 className="p-col-12">{t('Contact', 'Header')}</h2>
           </div>
         </div>
         <div className="p-col-12 p-md-10 contact-form">
@@ -25,24 +25,24 @@ function Contact({t}) {
               <div className="p-col-12 p-md-8 form-field">
                 <span className="p-float-label">
                   <InputText id="userName" />
-                  <label htmlFor="userName">{t('ContactName')}</label>
+                  <label htmlFor="userName">{t('Contact', 'Name')}</label>
                 </span>
               </div>
               <div className="p-col-12 p-md-8 form-field">
                 <span className="p-float-label">
                   <InputText id="userEmail" />
-                  <label htmlFor="userEmail">{t('ContactEmail')}</label>
+                  <label htmlFor="userEmail">{t('Contact', 'Email')}</label>
                 </span>
               </div>
               <div className="p-col-12 p-md-8 form-field">
                 <span className="p-float-label">
                   <InputTextarea id="userMessage" />
-                  <label htmlFor="userMessage">{t('ContactMessage')}</label>
+                  <label htmlFor="userMessage">{t('Contact', 'Message')}</label>
                 </span>
               </div>
               <div className="p-col-12 p-md-8">
                 <div className="p-col-4 p-offset-8 submit-button">
-                  <Button label={t('ContactSubmit')} icon="fas fa-paper-plane" />
+                  <Button label={t('Contact', 'Submit')} icon="fas fa-paper-plane" />
                 </div>
               </div>
             </div>
