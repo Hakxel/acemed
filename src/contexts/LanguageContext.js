@@ -8,14 +8,17 @@ export const LanguageContext = React.createContext()
 
 class LanguageProvider extends Component {
 
+  storedLanguage = localStorage.getItem('UserLanguage')
+
   state = {
-    language: 'EN',
+    language: this.storedLanguage && this.storedLanguage !== '' ? this.storedLanguage : 'EN',
   }
 
   changeLanguage = (lang) => {
     this.setState({
       language: lang
     })
+    localStorage.setItem('UserLanguage', lang)
   }
 
   translate = (txtKey, nestKey) => {
