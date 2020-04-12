@@ -7,7 +7,7 @@ function Logo({placement}) {
     class: placement === 'header' ? "logo-header" : "logo-footer"
   }
   return (
-    <a href="/">
+    <a href="/" className="logo-link">
       <img className={logo.class} src={logo.src} alt="Ace Medical And Rehab Logo"/>
     </a>
   )

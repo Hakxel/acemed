@@ -20,7 +20,7 @@ function Hero({t}) {
                   <div className="p-col-12">
                     <ToggleLanguage />
                   </div>
-                  <div className="p-col-10 p-col-align-center">
+                  <div className="p-col-12 p-md-10 p-col-align-center">
                     <div className="p-grid p-justify-center hero-text-wrapper">
                       <h1 className="p-col">{t('Hero', 'Welcome')}</h1>
                     </div>
