@@ -37,7 +37,7 @@ function Navigation() {
         <div className="navig-menu p-grid p-align-center p-justify-between">
           <div className="p-col-12 p-md-6">
             <div className="p-grid p-justify-start">
-              <Logo />
+              <Logo placement='header'/>
             </div>
           </div>
           <div className="p-col-12 p-md-6">

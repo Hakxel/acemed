@@ -1,4 +1,5 @@
 import React from 'react'
+import Logo from './Logo'
 
 function Footer() {
   return (
@@ -13,7 +14,7 @@ function Footer() {
             </div>
             <div className="p-col-12 p-md-4">
               <div className="p-grid p-justify-center footer-item">
-                <a href="/"><img className="logo-footer" src={require('../resources/Logo_light_blue.png')} alt="Ace Medical And Rehab Logo"></img></a>
+                <Logo placement='footer' />
               </div>
             </div>
             <div className="p-col-12 p-md-4">
