@@ -2,8 +2,7 @@ import React from 'react'
 
 function Appointments() {
   return (
-    <div>
-      The appointments component
+    <div id="appointments">
     </div>
   )
 }

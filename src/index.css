@@ -433,6 +433,15 @@ div.p-menubar.p-component {
 }
 
 /*****************************/
+/* APPOINTMENTS STYLES */
+/*****************************/
+
+#appointments {
+  height: 90vh;
+  background-color: snow;
+}
+
+/*****************************/
 /* FOOTER STYLES */
 /*****************************/
 
