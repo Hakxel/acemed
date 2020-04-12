@@ -13,12 +13,12 @@ function Footer() {
             </div>
             <div className="p-col-12 p-md-4">
               <div className="p-grid p-justify-center footer-item">
-                <img className="logo-footer" src={require('../resources/Logo.png')}></img>
+                <img className="logo-footer" src={require('../resources/Logo_light_blue.png')}></img>
               </div>
             </div>
             <div className="p-col-12 p-md-4">
               <div className="p-grid p-justify-end footer-item">
-                <p>&copy; Ace Medical & Rehab Center, 2020</p>
+                <p>&copy; Ace Medical & Rehab, 2020</p>
               </div>
             </div>
           </div>
