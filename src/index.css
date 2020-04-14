@@ -303,6 +303,8 @@ div.p-menubar.p-component {
 #about {
   height: 80vh;
   margin: 8px;
+  margin-bottom: 0px;
+  background-color: ghostwhite;
 }
 
 .about-container {
@@ -324,6 +326,7 @@ div.p-menubar.p-component {
 
 .panel-right {
   border-style: outset;
+  background-color: snow;
   /* border-right-color: teal;
   border-bottom-color: teal; */
 }
@@ -347,11 +350,12 @@ div.p-menubar.p-component {
 /*****************************/
 
 #schedule {
-  height: 75vh;
+  height: 80vh;
   width: 100vw;
   display: flex;
   align-items: center;
   justify-content: center;
+  background-color: ghostwhite;
 }
 
 .schedule-wrapper {
