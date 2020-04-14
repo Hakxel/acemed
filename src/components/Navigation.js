@@ -19,9 +19,6 @@ function Navigation() {
       url: '/',
       className: 'menu-link'
     },
-    // {
-    //   label: '|'
-    // },
     {
       label: t('Navigation', 'Appointment'),
       icon: 'pi pi-calendar',

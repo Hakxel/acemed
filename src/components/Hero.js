@@ -8,7 +8,7 @@ function Hero({t}) {
     alert("Book appointment clicked")
   }
 
-  const introImg = require('../resources/intro-nurse.jpg')
+  const introImg = 'https://ik.imagekit.io/hakxelimgs/shutterstock_648345937_S-I3SSn3O.jpg'
   
   return (
     <div id="hero" className="home-component p-grid p-justify-center">
