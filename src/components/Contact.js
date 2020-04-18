@@ -16,7 +16,7 @@ function Contact({t}) {
       <div className="p-grid p-justify-center">
         <div className="p-col-12 p-md-10 p-lg-8">
           <div className="contact-header p-grid p-justify-center p-align-center p-nogutter">
-            <h2 className="p-col-12">{t('Contact', 'Header')}</h2>
+            <h2 className="p-col-8">{t('Contact', 'Header')}</h2>
           </div>
         </div>
         <div className="p-col-12 p-md-10 contact-form">
