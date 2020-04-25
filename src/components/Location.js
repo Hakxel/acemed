@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import {GMap} from 'primereact/gmap'
 
 
@@ -6,15 +6,24 @@ function Location() {
 
   const google = window.google
 
+  const coord = {
+    latitude: 25.771517,
+    longitude: -80.261320
+  }
+
   const mapOptions = {
-    center: {lat: 25.771686, lng: -80.261349},
+    center: {lat: coord.latitude, lng: coord.longitude},
     zoom: 15
   }
 
   const marker = [
-    new google.maps.Marker({position: {lat: 25.771517, lng: -80.261320}, title:"Ace Medical & Rehab Center"})
+    new google.maps.Marker({position: {lat: coord.latitude, lng: coord.longitude}, title:"Ace Medical & Rehab Center"})
   ]
-  
+
+  const sendToNavigation = () => {
+    window.open(`https://www.google.com/maps/search/?api=1&query=${coord.latitude},${coord.longitude}`);
+  }
+
   return (
     <div id="location" className="home-component">
       <div className="p-grid p-justify-center">
@@ -27,7 +36,7 @@ function Location() {
       </div>
       <div className="p-grid p-justify-center">
         <div className="p-col-12 p-md-10 map-wrapper">
-          <GMap options={mapOptions} overlays={marker} style={{width: '100%', minHeight: '550px'}}/>
+          <GMap options={mapOptions} overlays={marker} style={{width: '100%', minHeight: '550px'}} onOverlayClick={sendToNavigation}/>
         </div>
       </div>
     </div>
