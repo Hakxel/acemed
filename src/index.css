@@ -413,7 +413,6 @@ div.p-menubar.p-component {
 
 .contact-form {
   margin-top: 2rem;
-  margin-bottom: 2rem;
 }
 
 .form-field {
@@ -430,6 +429,14 @@ div.p-menubar.p-component {
 /*****************************/
 #location {
   margin-bottom: 8px;
+}
+
+address {
+  font-size: larger;
+  font-weight: 800;
+  color: darkslategray;
+  margin: 16px;
+  text-align: center;
 }
 
 .map-wrapper {
