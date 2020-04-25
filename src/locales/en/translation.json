@@ -41,13 +41,11 @@
   },
   "Schedule": {
     "Header": "Clinic Hours",
-    "Subheader": "Here when you need us",
-    "Days_1": "Mon - Wed - Fri",
-    "Days_2": "Tue - Thu",
-    "Days_3": "Sat",
-    "Hours_1": "8:00 am - 5:00 pm",
-    "Hours_2": "9:00 am - 6:00 pm",
-    "Hours_3": "10:00 am - 4:00 pm"
+    "Subheader": "Ready to serve you",
+    "Days_1": "Monday - Friday",
+    "Days_2": "Saturday",
+    "Mode_1": "Regular Hours",
+    "Mode_2": "Appointments Only"
   },
   "Contact": {
     "Header": "Contact Us",

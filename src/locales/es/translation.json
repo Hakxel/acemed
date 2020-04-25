@@ -42,12 +42,10 @@
   "Schedule": {
     "Header": "Horario",
     "Subheader": "Listos para servirle",
-    "Days_1": "Lun - Mierc - Vier",
-    "Days_2": "Mar - Juev",
-    "Days_3": "Sab",
-    "Hours_1": "8:00 am - 5:00 pm",
-    "Hours_2": "9:00 am - 6:00 pm",
-    "Hours_3": "10:00 am - 4:00 pm"
+    "Days_1": "Lunes - Viernes",
+    "Days_2": "Sabado",
+    "Mode_1": "Horario Regular",
+    "Mode_2": "Solo Citas"
   },
   "Contact": {
     "Header": "Contáctenos",

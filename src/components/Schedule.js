@@ -9,18 +9,26 @@ function Schedule({t}) {
             <div className="p-col-12 p-md-10 p-col-justify-center info-wrapper">
               <h2>{t('Schedule', 'Header')}</h2>
               <h3>{t('Schedule', 'Subheader')}</h3>
-              <div className="p-grid p-justify-around p-align-center hours-wrapper">
-                <div className="p-col-6 p-col-">
+              <div className="p-grid p-justify-around hours-wrapper">
+                <div className="p-col-12 p-md-7">
                   <h4>{t('Schedule', 'Days_1')}</h4>
-                  <p>{t('Schedule', 'Hours_1')}</p>
+                  <div className="p-grid p-align-center">
+                    <div className="p-col-12 p-lg-6 schedule-hours">
+                      <span>{t('Schedule', 'Mode_1')}</span>
+                      <p>9:00 am - 4:00 pm</p>
+                    </div>
+                    <div className="p-col-12 p-lg-6 schedule-hours">
+                      <span>{t('Schedule', 'Mode_2')}</span>
+                      <p>4:00 pm - 7:00 pm</p>
+                    </div>
+                  </div>
                 </div>
-                <div className="p-col-6">
+                <div className="p-col-12 p-md-5">
                   <h4>{t('Schedule', 'Days_2')}</h4>
-                  <p>{t('Schedule', 'Hours_2')}</p>
-                </div>
-                <div className="p-col-6">
-                  <h4>{t('Schedule', 'Days_3')}</h4>
-                  <p>{t('Schedule', 'Hours_3')}</p>
+                  <div className="schedule-hours">
+                    <span>{t('Schedule', 'Mode_2')}</span>
+                    <p>10:00 am - 2:00 pm</p>
+                  </div>
                 </div>
               </div>
             </div>

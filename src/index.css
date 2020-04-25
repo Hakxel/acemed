@@ -188,11 +188,11 @@ div.p-menubar.p-component {
   max-height: 10%;
 }
 
-.hero-wrapper div:nth-child(2) {
-  /* flex-grow: 2; */
-  /* height: 40%; */
-  /* max-width: 85%; */
-}
+/* .hero-wrapper div:nth-child(2) {
+  flex-grow: 2;
+  height: 40%;
+  max-width: 85%;
+} */
 
 .hero-wrapper div:nth-child(3) {
   max-height: 20%;
@@ -304,7 +304,7 @@ div.p-menubar.p-component {
   height: 80vh;
   margin: 8px;
   margin-bottom: 0px;
-  background-color: ghostwhite;
+  /* background-color: ghostwhite; */
 }
 
 .about-container {
@@ -326,7 +326,7 @@ div.p-menubar.p-component {
 
 .panel-right {
   border-style: outset;
-  background-color: snow;
+  background-color: ghostwhite;
   /* border-right-color: teal;
   border-bottom-color: teal; */
 }
@@ -355,7 +355,7 @@ div.p-menubar.p-component {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: ghostwhite;
+  /* background-color: ghostwhite; */
 }
 
 .schedule-wrapper {
@@ -391,6 +391,23 @@ div.p-menubar.p-component {
   margin-top: 1.5rem;
 }
 
+.hours-wrapper h4 {
+  margin-bottom: 1rem;
+}
+
+.schedule-hours {
+  text-align: center;
+}
+
+.schedule-hours > p {
+  margin: 8px 0px 16px 0px;
+}
+
+.schedule-hours > span {
+  border-bottom: 1px solid darkgoldenrod;
+  color: darkslategray;
+}
+
 /*****************************/
 /* CONTACT STYLES */
 /*****************************/
@@ -406,7 +423,7 @@ div.p-menubar.p-component {
 
 .contact-header > h2 {
   background-color: rgba(240, 248, 255, 0.719);
-  border: 1px solid darkblue;
+  border: 1px solid goldenrod;
   border-radius: 5px;
   padding-top: 5px !important;
 }
@@ -698,7 +715,7 @@ address {
   }
 
   .schedule-info {
-    height: 95%;
+    height: auto;
   }
 }
 
@@ -746,5 +763,22 @@ address {
 
   .info-wrapper {
     height: auto;
+  }
+
+  .schedule-info {
+    height: auto;
+  }
+}
+
+@media screen and (max-width: 600px) and (orientation: landscape) {
+  #schedule {
+    height: 165vh;
+  }
+}
+
+
+@media screen and (min-width: 800px) and (orientation: landscape) {
+  #schedule {
+    height: 120vh;
   }
 }
