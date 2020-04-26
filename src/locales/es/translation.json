@@ -11,28 +11,31 @@
   },
   "Services": "Nuestros Servicios",
   "ServiceName": {
-    "1": "Servicio traducido 1",
-    "2": "Servicio traducido 2",
-    "3": "Servicio traducido 3",
-    "4": "Servicio traducido 4",
-    "5": "Servicio traducido 5",
-    "6": "Servicio traducido 6"
+    "1": "Rehabilitación física",
+    "2": "Acupuntura",
+    "3": "Ultrasonido",
+    "4": "Electroterapia",
+    "5": "Terapia ocupacional",
+    "6": "Terapia laser",
+    "7": "Atención primaria"
   },
   "ServiceDescrip": {
-    "1": "Servicio descripcion 1", 
-    "2": "Servicio descripcion 2", 
-    "3": "Servicio descripcion 3", 
-    "4": "Servicio descripcion 4", 
-    "5": "Servicio descripcion 5", 
-    "6": "Servicio descripcion 6"
+    "1": "", 
+    "2": "", 
+    "3": "", 
+    "4": "", 
+    "5": "", 
+    "6": "",
+    "7": ""
   },
   "ServiceAlt": {
-    "1": "Servicio alt 1",
-    "2": "Servicio alt 2",
-    "3": "Servicio alt 3",
-    "4": "Servicio alt 4",
-    "5": "Servicio alt 5",
-    "6": "Servicio alt 6"
+    "1": "Home caminando con ayuda de enfermera",
+    "2": "Paciente recibiendo acupuntura",
+    "3": "Enfermera aplicando ultrasonido en la pierna de un paciente",
+    "4": "Electroterapia aplicada en un hombro",
+    "5": "Niña manteniendo equilibrio en una pierna con ayuda de enfermera",
+    "6": "Mujer recibiendo terapia laser en el cuello",
+    "7": "Doctora atendiendo paciente"
   },
   "About": {
     "Header": "Sobre Ace Medical & Rehab",

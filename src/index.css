@@ -285,6 +285,20 @@ div.p-menubar.p-component {
 
 .p-card-body {
   height: 8rem;
+  /* Only when the card has no other content than the title */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* ******************************************************* */
+}
+
+.p-card-title {
+  color: darkslategray !important;
+  font-size: 28px !important;
+  font-family: 'Vollkorn';
+  letter-spacing: 1px;
+  text-transform: capitalize;
+  
 }
 
 .p-carousel-item img {

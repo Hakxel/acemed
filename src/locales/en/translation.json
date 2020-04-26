@@ -11,28 +11,31 @@
   },
   "Services": "Our Services",
   "ServiceName": {
-    "1": "Service title translated 1",
-    "2": "Service title translated 2",
-    "3": "Service title 3",
-    "4": "Service title 4",
-    "5": "Service title 5",
-    "6": "Service title 6"
+    "1": "Physical rehabilitation",
+    "2": "Acupuncture",
+    "3": "Ultrasound",
+    "4": "Electrotherapy",
+    "5": "Occupational therapy",
+    "6": "Laser therapy",
+    "7": "Primary Healthcare"
   },
   "ServiceDescrip": {
-    "1": "Service description 1", 
-    "2": "Service description 2", 
-    "3": "Service description 3", 
-    "4": "Service description 4", 
-    "5": "Service description 5", 
-    "6": "Service description 6"
+    "1": "", 
+    "2": "", 
+    "3": "", 
+    "4": "", 
+    "5": "", 
+    "6": "",
+    "7": ""
   },
   "ServiceAlt": {
-    "1": "Service alt translated 1",
-    "2": "Service alt translated 2",
-    "3": "Service alt translated 3",
-    "4": "Service alt translated 4",
-    "5": "Service alt translated 5",
-    "6": "Service alt translated 6"
+    "1": "Man walking with nurse help",
+    "2": "Patient receiving acupuncture",
+    "3": "Nurse performing ultrasound on a patient's leg ",
+    "4": "Electrotherapy applied on a shoulder",
+    "5": "Girl balancing on one leg with nurse help",
+    "6": "Woman receiving laser therapy on her neck",
+    "7": "Doctor treating patient"
   },
   "About": {
     "Header": "About Ace Medical & Rehab",
