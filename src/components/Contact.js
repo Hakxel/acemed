@@ -42,7 +42,7 @@ function Contact({t}) {
               </div>
               <div className="p-col-12 p-md-8">
                 <div className="p-col-4 p-offset-8 submit-button">
-                  <Button label={t('Contact', 'Submit')} icon="fas fa-paper-plane" />
+                  <Button label={t('Contact', 'Submit')} icon="fas fa-paper-plane" style={{'background-color':'teal'}}/>
                 </div>
               </div>
             </div>
