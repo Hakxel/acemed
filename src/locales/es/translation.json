@@ -39,11 +39,11 @@
   },
   "About": {
     "Header": "Sobre Ace Medical & Rehab",
-    "Content_1": "Elit cillum consequat laborum anim consectetur veniam eiusmod. Exercitation nulla adipisicing consequat adipisicing. Ut nisi nisi aute non.",
-    "Content_2": "Nulla velit commodo ullamco elit laboris est exercitation labore do commodo in nisi ut aliqua. Ipsum dolor nostrud in et tempor dolore commodo excepteur dolore elit non eu tempor. Veniam ullamco adipisicing sunt consequat quis in incididunt consectetur laboris ad."
+    "Content_1": "Nuestro centro está formado por un colectivo enfocado en un simple propósito: hacer que Ace Medical & Rehab sea la primera opción en su mente cuando piense en su salud y bienestar físicos. Al cruzar nuestras puertas, usted recibe nuestra promesa de atención especializada y la calidez humana que solo un trato personalizado le puede ofrecer.",
+    "Content_2": "Con Ace Medical & Rehab, su salud es nuestro deber, el privilegio es su satisfacción."
   },
   "Schedule": {
-    "Header": "Horario",
+    "Header": "Horario de Atención",
     "Subheader": "Listos para servirle",
     "Days_1": "Lunes - Viernes",
     "Days_2": "Sabado",
@@ -51,7 +51,7 @@
     "Mode_2": "Solo Citas"
   },
   "Contact": {
-    "Header": "Contáctenos",
+    "Header": "Queremos escucharle",
     "Name": "Nombre",
     "Email": "Email",
     "Message": "Mensaje",

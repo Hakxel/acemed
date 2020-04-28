@@ -8,7 +8,7 @@ function Schedule({t}) {
           <div className="p-grid p-align-center p-justify-center schedule-info">
             <div className="p-col-12 p-md-10 p-col-justify-center info-wrapper">
               <h2>{t('Schedule', 'Header')}</h2>
-              <h3>{t('Schedule', 'Subheader')}</h3>
+              {/* <h3>{t('Schedule', 'Subheader')}</h3> */}
               <div className="p-grid p-justify-around hours-wrapper">
                 <div className="p-col-12 p-md-6">
                   <h4>{t('Schedule', 'Days_1')}</h4>
