@@ -5,6 +5,7 @@ import Appointments from './components/Appointments'
 import Navigation from './components/Navigation'
 import Footer from './components/Footer'
 import LanguageProvider from './contexts/LanguageContext'
+import { ToastProvider } from 'react-toast-notifications'
 
 
 
@@ -12,12 +13,14 @@ function App() {
 
   return (
     <LanguageProvider className="app">
-      <Navigation />
-      <Router>
-        <Route exact path="/" component={Home} />
-        <Route path="/appointments" component={Appointments} />
-      </Router>
-      <Footer />
+      <ToastProvider placement="top-center">
+        <Navigation />
+        <Router>
+          <Route exact path="/" component={Home} />
+          <Route path="/appointments" component={Appointments} />
+        </Router>
+        <Footer />
+      </ToastProvider>
     </LanguageProvider>
   )
 }

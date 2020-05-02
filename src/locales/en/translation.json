@@ -55,7 +55,9 @@
     "Name": "Your Name",
     "Email": "Contact Email",
     "Message": "Message",
-    "Submit": "Send"
+    "Submit": "Send",
+    "Message_Sent": "Your message has been sent!",
+    "Message_Error": "There has been an error. Try again later."
   }
 
 }

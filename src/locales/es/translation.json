@@ -55,6 +55,8 @@
     "Name": "Nombre",
     "Email": "Email",
     "Message": "Mensaje",
-    "Submit": "Enviar"
+    "Submit": "Enviar",
+    "Message_Sent": "Su mensaje ha sido enviado!",
+    "Message_Error": "A ocurrido un error. Vuelva a intentarlo más tarde."
   }
 }
