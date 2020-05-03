@@ -10,6 +10,12 @@ function Contact({t}) {
   const [senderName, setSenderName] = useState('')
   const [senderEmail, setSenderEmail] = useState('')
   const [senderMessage, setSenderMessage] = useState('')
+  const [hasNoErrors, setHasNoErrors] = useState(true)
+  const [nameErrors, setNameErrors] = useState('')
+  const [emailErrors, setEmailErrors] = useState('')
+  const [messageErrors, setMessageErrors] = useState('')
+  const [submitFailed, setSubmitFailed] = useState(false)
+
 
   const emailParams = {
     user_Id: "user_4cNIsVKI69cQQSwT6hDz0",
@@ -24,32 +30,128 @@ function Contact({t}) {
   }
 
   const resetState = () => {
-    setSenderName('');
-    setSenderEmail('');
-    setSenderMessage('');
+    setSenderName('')
+    setSenderEmail('')
+    setSenderMessage('')
+    setNameErrors('')
+    setEmailErrors('')
+    setMessageErrors('')
+    setHasNoErrors(true)
+    setSubmitFailed(false)
   }
 
   const handleFormSubmit = (e) => {
     e.preventDefault()
-    // validateForm(e.target.userName, e.target.userEmail, e.target.userMessage)
-    if (false) {
-      sendEmail()
+    
+    if (hasNoErrors && isNotEmpty() && hasValidEmail(senderEmail)) {
+      // sendEmail()
+      callToast('success')
+      resetState()
+    } else {
+      setSubmitFailed(true)
     }
+  }
+
+  const isNotEmpty = () => {
+    if (isEmpty(senderName) || isEmpty(senderEmail) || isEmpty(senderMessage)) {
+      callToast("invalid")
+      return false
+    }
+    return true
+  }
+  
+  const isValidText = (field, value) => {
+    switch (field) {
+      case 'name':
+        if (hasInvalidChars(value)) {
+          setNameErrors(t('Contact', 'Error_Chars'))
+          return false
+        } else {
+          setNameErrors('')
+        }
+        if (value.length > 180) {
+          setNameErrors(t('Contact', 'Error_Name_Length'))
+          return false
+        } else {
+          setNameErrors('')
+        }
+        break;
+      case 'message':
+        if (hasInvalidChars(value)) {
+          setMessageErrors(t('Contact', 'Error_Chars'))
+          return false
+        } else {
+          setMessageErrors('')
+        } 
+        if(value.length > 2000) {
+          setMessageErrors(t('Contact', 'Error_Message_Length'))
+          return false
+        } else {
+          setMessageErrors('')
+        }
+        break
+    }
+    return true
+  }
+
+  const hasValidEmail = (value) => {
+    if (isInvalidEmail(value)) {
+      setEmailErrors(t('Contact', "Error_Email"))
+      return false
+    } else {
+      setEmailErrors('')
+      return true
+    }
+  }
+
+  const isEmpty = (userInput) => {
+    if (userInput == '') {
+      return true
+    }
+    return false
+  }
+  
+  const hasInvalidChars = (userInput) => {
+    let invalidText = /[\<\>!@#\$%^&\*,]+/i
+    if(userInput.match(invalidText)) {
+      return true
+    }
+    return false
+  }
+
+  const isInvalidEmail = (userInput) => {
+    let validEmail = /^.+@[^\.].*\.[a-z]{2,}$/
+    if(!userInput.match(validEmail)) {
+      return true
+    }
+    return false
   }
 
   const handleChange = (data) => {
     switch (data.id) {
       case 'userName':
-        setSenderName(data.value);
+        if(isValidText("name", data.value)) {
+          setHasNoErrors(true)
+        } else {
+          setHasNoErrors(false)
+        }
+        setSenderName(data.value)
         break;
       case 'userEmail':
-        setSenderEmail(data.value);
+        setSenderEmail(data.value)
+        if(submitFailed) {
+          setEmailErrors('')
+          setSubmitFailed(false)
+        }
         break;
       case 'userMessage':
+        if(isValidText("message", data.value)) {
+          setHasNoErrors(true)
+        } else {
+          setHasNoErrors(false)
+        }
         setSenderMessage(data.value);
         break;
-      default:
-        resetState();
     }
   }
 
@@ -84,8 +186,18 @@ function Contact({t}) {
         transitionDuration: 500,
       })
     }
+    if (type === 'invalid') {
+      addToast(t("Contact", "Error_Empty"), {
+        appearance: 'warning',
+        autoDismiss: true,
+        transitionDuration: 500,
+      })
+    }
   }
 
+  const errorMessage = (error) => {
+    return <div className="error-message">{error}</div>
+  }
 
   return (
     <div id="contact" className="home-component">
@@ -100,21 +212,25 @@ function Contact({t}) {
             <div className="p-grid p-justify-center p-fluid p-nogutter">
               <div className="p-col-12 p-md-8 form-field">
                 <span className="p-float-label">
-                  <InputText id="userName" value={senderName} onChange={(e) => {handleChange(e.target)}} validateOnly={true} required/>
+                  <InputText id="userName" value={senderName} onChange={(e) => {handleChange(e.target)}}
+                  autoComplete="disabled"/>
                   <label htmlFor="userName">{t('Contact', 'Name')}</label>
                 </span>
+                {nameErrors == '' ? null : errorMessage(nameErrors)}
               </div>
               <div className="p-col-12 p-md-8 form-field">
                 <span className="p-float-label">
-                  <InputText id="userEmail" value={senderEmail} onChange={(e) => {handleChange(e.target)}}/>
+                  <InputText id="userEmail" value={senderEmail} onChange={(e) => {handleChange(e.target)}} autoComplete="disabled"/>
                   <label htmlFor="userEmail">{t('Contact', 'Email')}</label>
                 </span>
+                {emailErrors == '' ? null : errorMessage(emailErrors)}
               </div>
               <div className="p-col-12 p-md-8 form-field">
                 <span className="p-float-label">
-                  <InputTextarea id="userMessage" value={senderMessage} onChange={(e) => {handleChange(e.target)}}/>
+                  <InputTextarea id="userMessage" value={senderMessage} onChange={(e) => {handleChange(e.target)}} autoComplete="disabled"/>
                   <label htmlFor="Message">{t('Contact', 'Message')}</label>
                 </span>
+                {messageErrors == '' ? null : errorMessage(messageErrors)}
               </div>
               <div className="p-col-12 p-md-8">
                 <div className="p-col-4 p-offset-8 submit-button">

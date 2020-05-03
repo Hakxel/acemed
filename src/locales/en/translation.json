@@ -57,7 +57,12 @@
     "Message": "Message",
     "Submit": "Send",
     "Message_Sent": "Your message has been sent!",
-    "Message_Error": "There has been an error. Try again later."
+    "Message_Error": "There has been an error. Try again later.",
+    "Error_Empty": "Please complete all the fields before submitting",
+    "Error_Chars": "Special characters are not allowed.",
+    "Error_Email": "Please enter a valid email.",
+    "Error_Name_Length": "Max length is 180 characters.",
+    "Error_Message_Length": "Max length is 2000 characters."
   }
 
 }

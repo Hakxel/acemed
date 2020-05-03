@@ -57,6 +57,11 @@
     "Message": "Mensaje",
     "Submit": "Enviar",
     "Message_Sent": "Su mensaje ha sido enviado!",
-    "Message_Error": "A ocurrido un error. Vuelva a intentarlo más tarde."
+    "Message_Error": "A ocurrido un error. Vuelva a intentarlo más tarde.",
+    "Error_Empty": "Complete todos los campos antes de enviar.",
+    "Error_Chars": "No se permiten caracteres especiales.",
+    "Error_Email": "Inserte un email válido.",
+    "Error_Name_Length": "La longitud máxima es de 180 carateres.",
+    "Error_Message_Length": "La longitud máxima es de 2000 carateres."
   }
 }

@@ -463,6 +463,11 @@ div.p-menubar.p-component {
   padding-left: 0px;
 }
 
+.error-message {
+  color: red;
+  margin-top: 2px;
+}
+
 /*****************************/
 /* LOCATION STYLES */
 /*****************************/
