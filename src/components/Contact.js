@@ -202,7 +202,7 @@ function Contact({t}) {
   return (
     <div id="contact" className="home-component">
       <div className="p-grid p-justify-center">
-        <div className="p-col-12 p-md-10 p-lg-8">
+        <div className="p-col-12 p-md-10 p-xl-8">
           <div className="contact-header p-grid p-justify-center p-align-center p-nogutter">
             <h2 className="p-col-8">{t('Contact', 'Header')}</h2>
           </div>
