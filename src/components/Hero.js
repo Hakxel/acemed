@@ -1,11 +1,12 @@
 import React from 'react'
-import {Parallax, Background} from 'react-parallax'
-import {Button} from 'primereact/button'
+import {Parallax} from 'react-parallax'
 import ToggleLanguage from './ToggleLanguage'
+import {useHistory} from 'react-router-dom'
 
 function Hero({t}) {
- const handleAppointment= () => {
-    alert("Book appointment clicked")
+  const navigation = useHistory()
+  const handleAppointment= () => {
+    navigation.push("/appointments")
   }
 
   const introImg = 'https://ik.imagekit.io/hakxelimgs/shutterstock_648345937_S-I3SSn3O.jpg'
@@ -27,7 +28,7 @@ function Hero({t}) {
                   </div>
                   <div className="p-col-12 p-col-align-center">
                     <div className="p-grid p-justify-center">
-                      <button className="hero-appointment">
+                      <button className="hero-appointment" onClick={handleAppointment}>
                         {t('Hero', 'BookNow')}
                       </button>
                     </div>
