@@ -492,8 +492,12 @@ address {
 /*****************************/
 
 #appointments {
-  height: 90vh;
-  background-color: snow;
+  min-height: 100vh;
+  background-color: #fffafa;
+}
+
+.booking-wrapper {
+  margin-bottom: 8px;
 }
 
 /*****************************/

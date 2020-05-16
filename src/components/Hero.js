@@ -27,7 +27,9 @@ function Hero({t}) {
                   </div>
                   <div className="p-col-12 p-col-align-center">
                     <div className="p-grid p-justify-center">
-                      <button  className="hero-appointment">{t('Hero', 'BookNow')}</button>
+                      <button className="hero-appointment">
+                        {t('Hero', 'BookNow')}
+                      </button>
                     </div>
                   </div>
                 
