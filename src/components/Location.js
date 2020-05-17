@@ -28,7 +28,7 @@ function Location() {
     <div id="location" className="home-component">
       <div className="p-grid p-justify-center">
         <div className="p-col-12 p-md-6">
-          <address>3990 W Flager St. Suite 102</address>
+          <address>3990 W Flagler St. Suite 102</address>
           <address>Coral Gables</address>
           <address>FL 33134</address>
           <address>Tel: 305 392 1143</address>
