@@ -44,8 +44,8 @@ function Contact({t}) {
     e.preventDefault()
     
     if (hasNoErrors && isNotEmpty() && hasValidEmail(senderEmail)) {
-      // sendEmail()
-      callToast('success')
+      sendEmail()
+      // callToast('success')
       resetState()
     } else {
       setSubmitFailed(true)
@@ -61,6 +61,7 @@ function Contact({t}) {
   }
   
   const isValidText = (field, value) => {
+    // eslint-disable-next-line
     switch (field) {
       case 'name':
         if (hasInvalidChars(value)) {
@@ -105,14 +106,14 @@ function Contact({t}) {
   }
 
   const isEmpty = (userInput) => {
-    if (userInput == '') {
+    if (userInput === '') {
       return true
     }
     return false
   }
   
   const hasInvalidChars = (userInput) => {
-    let invalidText = /[\<\>!@#\$%^&\*,]+/i
+    let invalidText = /[<>!@#$%^&*,]+/i
     if(userInput.match(invalidText)) {
       return true
     }
@@ -120,7 +121,7 @@ function Contact({t}) {
   }
 
   const isInvalidEmail = (userInput) => {
-    let validEmail = /^.+@[^\.].*\.[a-z]{2,}$/
+    let validEmail = /^.+@[^.].*\.[a-z]{2,}$/
     if(!userInput.match(validEmail)) {
       return true
     }
@@ -128,6 +129,7 @@ function Contact({t}) {
   }
 
   const handleChange = (data) => {
+    // eslint-disable-next-line
     switch (data.id) {
       case 'userName':
         if(isValidText("name", data.value)) {
@@ -216,21 +218,21 @@ function Contact({t}) {
                   autoComplete="disabled"/>
                   <label htmlFor="userName">{t('Contact', 'Name')}</label>
                 </span>
-                {nameErrors == '' ? null : errorMessage(nameErrors)}
+                {nameErrors === '' ? null : errorMessage(nameErrors)}
               </div>
               <div className="p-col-12 p-md-8 form-field">
                 <span className="p-float-label">
                   <InputText id="userEmail" value={senderEmail} onChange={(e) => {handleChange(e.target)}} autoComplete="disabled"/>
                   <label htmlFor="userEmail">{t('Contact', 'Email')}</label>
                 </span>
-                {emailErrors == '' ? null : errorMessage(emailErrors)}
+                {emailErrors === '' ? null : errorMessage(emailErrors)}
               </div>
               <div className="p-col-12 p-md-8 form-field">
                 <span className="p-float-label">
                   <InputTextarea id="userMessage" value={senderMessage} onChange={(e) => {handleChange(e.target)}} autoComplete="disabled"/>
                   <label htmlFor="Message">{t('Contact', 'Message')}</label>
                 </span>
-                {messageErrors == '' ? null : errorMessage(messageErrors)}
+                {messageErrors === '' ? null : errorMessage(messageErrors)}
               </div>
               <div className="p-col-12 p-md-8">
                 <div className="p-col-4 p-offset-8 submit-button">

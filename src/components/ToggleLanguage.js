@@ -12,7 +12,7 @@ function ToggleLanguage() {
     if(!buttonIcon || !buttonLang) {
       switchButtonIconAndLanguage(language)
     }
-  }, [])
+  })
   
   const switchButtonIconAndLanguage = (lang) => {
     let newLang = toggleLanguage(lang)

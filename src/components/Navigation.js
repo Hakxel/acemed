@@ -1,16 +1,11 @@
 import React, {useContext} from 'react'
 import {LanguageContext} from '../contexts/LanguageContext'
 import {Menubar} from 'primereact/menubar'
-import ToggleLanguage from './ToggleLanguage'
 import Logo from './Logo'
 
 function Navigation() {
 
   const {t} = useContext(LanguageContext)
-
-  const handleClick = () => {
-    alert("Don't panic")
-  }
 
   const menubarItems = [
     {

@@ -9,7 +9,7 @@ function Footer() {
           <div className="p-grid p-justify-even footer-content">
             <div className="p-col-12 p-md-4">
               <div className="p-grid p-justify-start footer-item">
-                <a href="https://www.facebook.com/Ace-Medical-Rehab-Center-337582687177448/" target="_blank" rel="noopener"><i className="fab fa-3x fa-facebook-square"></i></a>
+                <a href="https://www.facebook.com/Ace-Medical-Rehab-Center-337582687177448/" target="_blank" rel="noopener noreferrer"><i className="fab fa-3x fa-facebook-square"></i></a>
               </div>
             </div>
             <div className="p-col-12 p-md-4">
