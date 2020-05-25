@@ -6,7 +6,6 @@ function Appointments() {
   const [isLoading, setIsLoading] = useState(true)
   const {language} = useContext(LanguageContext)
   const frameLang = language.toLowerCase()
-  console.log(frameLang)
 
   useEffect(() => {
     setInterval(() => {

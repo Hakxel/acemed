@@ -12,7 +12,6 @@
   "Services": "Our Services",
   "ServiceName": {
     "1": "Physical rehabilitation",
-    "2": "Acupuncture",
     "3": "Ultrasound",
     "4": "Electrotherapy",
     "5": "Occupational therapy",
@@ -21,7 +20,6 @@
   },
   "ServiceDescrip": {
     "1": "", 
-    "2": "", 
     "3": "", 
     "4": "", 
     "5": "", 
@@ -30,7 +28,6 @@
   },
   "ServiceAlt": {
     "1": "Man walking with nurse help",
-    "2": "Patient receiving acupuncture",
     "3": "Nurse performing ultrasound on a patient's leg ",
     "4": "Electrotherapy applied on a shoulder",
     "5": "Girl balancing on one leg with nurse help",
